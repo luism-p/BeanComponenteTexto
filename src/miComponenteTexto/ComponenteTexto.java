@@ -127,10 +127,6 @@ public class ComponenteTexto extends JTextField implements Serializable {
                             e.consume();
                         }
                         break;
-                    case "Texto":
-                        caracter=Character.toUpperCase(caracter);
-                        e.setKeyChar(caracter); //Escribe el caracter convertido a mayúsculas
-                        break;
                     case "SN":
                         if(caracter != KeyEvent.VK_S && caracter != KeyEvent.VK_N)
                             e.consume();
