@@ -175,6 +175,7 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
             properties[PROPERTY_alignmentY] = new PropertyDescriptor ( "alignmentY", miComponenteTexto.ComponenteTexto.class, "getAlignmentY", "setAlignmentY" ); // NOI18N
             properties[PROPERTY_ancestorListeners] = new PropertyDescriptor ( "ancestorListeners", miComponenteTexto.ComponenteTexto.class, "getAncestorListeners", null ); // NOI18N
             properties[PROPERTY_ancho] = new PropertyDescriptor ( "ancho", miComponenteTexto.ComponenteTexto.class, "getAncho", "setAncho" ); // NOI18N
+            properties[PROPERTY_ancho].setPropertyEditorClass ( miComponenteTexto.anchoPropertyEditor.class );
             properties[PROPERTY_autoscrolls] = new PropertyDescriptor ( "autoscrolls", miComponenteTexto.ComponenteTexto.class, "getAutoscrolls", "setAutoscrolls" ); // NOI18N
             properties[PROPERTY_background] = new PropertyDescriptor ( "background", miComponenteTexto.ComponenteTexto.class, "getBackground", "setBackground" ); // NOI18N
             properties[PROPERTY_backgroundSet] = new PropertyDescriptor ( "backgroundSet", miComponenteTexto.ComponenteTexto.class, "isBackgroundSet", null ); // NOI18N

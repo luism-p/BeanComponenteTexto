@@ -1,10 +1,5 @@
 package miComponenteTexto;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -66,11 +61,16 @@ public class ComponenteTexto extends JTextField implements Serializable {
      * @param ancho new value of ancho
      */
     public void setAncho(String ancho) {
+        
         int hide = Integer.parseInt(ancho);
-        if(hide <= 0)
-            this.ancho = "1";
-        else
+        if(hide <= 0){
+            ancho = "1";
             this.ancho = ancho;
+            super.setColumns(Integer.parseInt(ancho));
+        }else{
+            this.ancho = ancho;
+            super.setColumns(Integer.parseInt(ancho));
+        }
     }
     
     @Override
@@ -105,8 +105,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
             default:
                 super.setText(text);
                 break;
-        }
-            
+        }        
     }
     
     public final void gestionaEntrada() {
@@ -114,8 +113,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
             
             @Override
             public void keyTyped(KeyEvent e) {
-                char caracter = e.getKeyChar();
-                        
+                char caracter = e.getKeyChar();       
                 switch (tipo) {
                     case "Entero":
                         if (!Character.isDigit(caracter)) {
@@ -128,10 +126,8 @@ public class ComponenteTexto extends JTextField implements Serializable {
                         }
                         break;
                     case "SN":
-                        if(caracter != KeyEvent.VK_S && caracter != KeyEvent.VK_N)
+                        if(Character.toUpperCase(caracter) != KeyEvent.VK_S && Character.toUpperCase(caracter) != KeyEvent.VK_N)
                             e.consume();
-                        
-                        
                 }
             }
         });
