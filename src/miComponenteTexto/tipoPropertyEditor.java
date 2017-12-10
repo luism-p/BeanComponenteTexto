@@ -46,7 +46,6 @@ public class tipoPropertyEditor extends PropertyEditorSupport {
             tipo = new String();
         }
         super.setValue(tipo);
-
     }
     
     @Override
@@ -67,11 +66,6 @@ public class tipoPropertyEditor extends PropertyEditorSupport {
     
     @Override
     public String getJavaInitializationString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\"");
-        sb.append((String) editor.jcbTipo.getSelectedItem());
-        sb.append("\"");
-        String retorno = new String(sb);
-        return retorno;
+        return "\"" + editor.jcbTipo.getSelectedItem().toString() + "\"";
     }
 }
