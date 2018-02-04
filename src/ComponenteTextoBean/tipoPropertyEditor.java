@@ -13,7 +13,7 @@ public class tipoPropertyEditor extends PropertyEditorSupport {
     private editorTipo editor = null;
     
     /**
-     *
+     * constructor
      */
     public tipoPropertyEditor() {
         //establece el valor preseleccionado en el editor.

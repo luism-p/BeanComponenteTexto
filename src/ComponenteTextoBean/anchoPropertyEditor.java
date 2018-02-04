@@ -12,8 +12,9 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
     private editorAncho editor = null;
     
     /**
-     *
+     * constructor
      */
+    
     public anchoPropertyEditor() {
         this.editor = new editorAncho();
     }
