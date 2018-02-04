@@ -1,4 +1,5 @@
-package miComponenteTexto;
+
+package ComponenteTextoBean;
 
 import java.awt.Component;
 import java.beans.*;
@@ -7,14 +8,15 @@ import java.beans.*;
  *
  * @author Luis
  */
-public class anchoPropertyEditor extends PropertyEditorSupport {
+public class tipoPropertyEditor extends PropertyEditorSupport {
+    //variable del editor
+    private editorTipo editor = null;
     
-    private editorAncho editor = null;
-    
-    public anchoPropertyEditor() {
-        this.editor = new editorAncho();
+    public tipoPropertyEditor() {
+        //establece el valor preseleccionado en el editor.
+        this.editor = new editorTipo();
     }
-    
+    //permite obtener el editor.
     @Override
     public Component getCustomEditor() {
         return editor;
@@ -22,8 +24,7 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
     
         @Override
     public String[] getTags() {
-        String[] tags = {"1", "2", "3", "4","5", "6", "7", "8", "9", "10","11" 
-                ,"12", "13", "14","15"};
+        String[] tags = {"Entero", "Real", "Texto", "SN", "Alfanumérico"};
         return tags;
     }
     /*
@@ -37,8 +38,8 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
             if(super.getValue()==null){
                 setValue(null);
             }
-            int ret;
-            ret = (int) editor.jsAncho.getValue();
+        String ret = (String) super.getValue();
+        ret = editor.jcbTipo.getSelectedItem().toString();
         return ret;
     }
 
@@ -46,38 +47,40 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
      * Asigna un valor (obtenido del panel) a la propiedad
      */
     @Override
-    public void setValue(Object ancho) {
-        if(ancho==null){
-            ancho = 1;
+    public void setValue(Object tipo) {
+        if(tipo==null){
+            tipo = new String();
         }
-        
-        super.setValue((int) ancho);
-
+        super.setValue(tipo);
     }
     
+    //Indica que el bean tiene un editor personalizado.
     @Override
     public boolean supportsCustomEditor() {
         return true;
     }
+    
     //devuelve en la hoja de propiedades el valor establecido en el editor
     @Override
     public String getAsText(){
-        return editor.jsAncho.getValue().toString();
+        return super.getAsText();
     }
+    
     //establece el valor seleccionado en el editor de propiedades
     @Override
     public void setAsText(String text){
-        editor.jsAncho.setValue(Integer.parseInt(text));
+        editor.jcbTipo.setSelectedItem(text);
+        super.setAsText(text);
     }
     /*
     devuelve una cadena que será el valor 
-    configurado en el componente personalizado. Este valor es el que obtenido desde getValue 
+configurado en el componente personalizado. Este valor es el que obtenido desde getValue 
     se formatea para que se coloque en el código java. Si se quiere representar un número, 
     como es este caso, debe devolverse una cadena simple, sin agregar las comillas dobles. 
     Ver el ejemplo de tipo para notar la diferencia.
     */
     @Override
     public String getJavaInitializationString() {
-        return editor.jsAncho.getValue().toString();
+        return "\"" + editor.jcbTipo.getSelectedItem().toString() + "\"";
     }
 }

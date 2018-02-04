@@ -1,6 +1,7 @@
-package miComponenteTexto;
+package ComponenteTextoBean;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.KeyAdapter;
@@ -17,18 +18,42 @@ public class ComponenteTexto extends JTextField implements Serializable {
         
     private String tipo;
     private int ancho;
+    private Font fuente;
+    private Color colorFuente;
+
     private final Color ERROR = new Color(249,206,206);
     
     /**
      * Constructor sin argumentos
      */
     public ComponenteTexto() {
-        this.setAncho(5);
+        this.ancho=5;
         this.setTipo("Texto");
         this.setText("");
+        this.fuente=new Font("Agency FB", Font.BOLD, 14);
+        this.colorFuente=Color.BLACK;
         this.gestionaEntrada();
     }//close constructor
+    
+    
+    public Font getFuente() {
+        return fuente;
+    }
 
+    public void setFuente(Font fuente) {
+        this.fuente = fuente;
+        this.setFont(fuente);
+    }
+
+    public Color getColorFuente() {
+        return colorFuente;
+    }
+
+    public void setColorFuente(Color colorFuente) {
+        this.colorFuente = colorFuente;
+        this.setForeground(colorFuente);
+    }
+    
     /**
      * Get the value of tipo
      *
@@ -44,8 +69,8 @@ public class ComponenteTexto extends JTextField implements Serializable {
      * @param tipo new value of tipo
      */
     public void setTipo(String tipo) {
-        if (tipo.equals("Entero") || tipo.equals("Real")
-                || tipo.equals("Texto") || tipo.equals("SN")) 
+        if (tipo.equals("Entero") || tipo.equals("Real") || tipo.equals("Texto")
+                || tipo.equals("SN") || tipo.equals("Alfanumérico")) 
             this.tipo = tipo;
     }//close set.
 

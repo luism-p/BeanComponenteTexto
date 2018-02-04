@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package miComponenteTexto;
+package ComponenteTextoBean;
 
 import java.beans.*;
 
@@ -16,7 +16,7 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
     // Bean descriptor//GEN-FIRST:BeanDescriptor
     /*lazy BeanDescriptor*/
     private static BeanDescriptor getBdescriptor(){
-        BeanDescriptor beanDescriptor = new BeanDescriptor  ( miComponenteTexto.ComponenteTexto.class , null ); // NOI18N//GEN-HEADEREND:BeanDescriptor
+        BeanDescriptor beanDescriptor = new BeanDescriptor  ( ComponenteTextoBean.ComponenteTexto.class , null ); // NOI18N//GEN-HEADEREND:BeanDescriptor
         // Here you can add code for customizing the BeanDescriptor.
 
         return beanDescriptor;     }//GEN-LAST:BeanDescriptor
@@ -165,143 +165,143 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
         PropertyDescriptor[] properties = new PropertyDescriptor[135];
     
         try {
-            properties[PROPERTY_accessibleContext] = new PropertyDescriptor ( "accessibleContext", miComponenteTexto.ComponenteTexto.class, "getAccessibleContext", null ); // NOI18N
-            properties[PROPERTY_action] = new PropertyDescriptor ( "action", miComponenteTexto.ComponenteTexto.class, "getAction", "setAction" ); // NOI18N
-            properties[PROPERTY_actionCommand] = new PropertyDescriptor ( "actionCommand", miComponenteTexto.ComponenteTexto.class, null, "setActionCommand" ); // NOI18N
-            properties[PROPERTY_actionListeners] = new PropertyDescriptor ( "actionListeners", miComponenteTexto.ComponenteTexto.class, "getActionListeners", null ); // NOI18N
-            properties[PROPERTY_actionMap] = new PropertyDescriptor ( "actionMap", miComponenteTexto.ComponenteTexto.class, "getActionMap", "setActionMap" ); // NOI18N
-            properties[PROPERTY_actions] = new PropertyDescriptor ( "actions", miComponenteTexto.ComponenteTexto.class, "getActions", null ); // NOI18N
-            properties[PROPERTY_alignmentX] = new PropertyDescriptor ( "alignmentX", miComponenteTexto.ComponenteTexto.class, "getAlignmentX", "setAlignmentX" ); // NOI18N
-            properties[PROPERTY_alignmentY] = new PropertyDescriptor ( "alignmentY", miComponenteTexto.ComponenteTexto.class, "getAlignmentY", "setAlignmentY" ); // NOI18N
-            properties[PROPERTY_ancestorListeners] = new PropertyDescriptor ( "ancestorListeners", miComponenteTexto.ComponenteTexto.class, "getAncestorListeners", null ); // NOI18N
-            properties[PROPERTY_ancho] = new PropertyDescriptor ( "ancho", miComponenteTexto.ComponenteTexto.class, "getAncho", "setAncho" ); // NOI18N
-            properties[PROPERTY_ancho].setPropertyEditorClass ( miComponenteTexto.anchoPropertyEditor.class );
-            properties[PROPERTY_autoscrolls] = new PropertyDescriptor ( "autoscrolls", miComponenteTexto.ComponenteTexto.class, "getAutoscrolls", "setAutoscrolls" ); // NOI18N
-            properties[PROPERTY_background] = new PropertyDescriptor ( "background", miComponenteTexto.ComponenteTexto.class, "getBackground", "setBackground" ); // NOI18N
-            properties[PROPERTY_backgroundSet] = new PropertyDescriptor ( "backgroundSet", miComponenteTexto.ComponenteTexto.class, "isBackgroundSet", null ); // NOI18N
-            properties[PROPERTY_baselineResizeBehavior] = new PropertyDescriptor ( "baselineResizeBehavior", miComponenteTexto.ComponenteTexto.class, "getBaselineResizeBehavior", null ); // NOI18N
-            properties[PROPERTY_border] = new PropertyDescriptor ( "border", miComponenteTexto.ComponenteTexto.class, "getBorder", "setBorder" ); // NOI18N
-            properties[PROPERTY_bounds] = new PropertyDescriptor ( "bounds", miComponenteTexto.ComponenteTexto.class, "getBounds", "setBounds" ); // NOI18N
-            properties[PROPERTY_caret] = new PropertyDescriptor ( "caret", miComponenteTexto.ComponenteTexto.class, "getCaret", "setCaret" ); // NOI18N
-            properties[PROPERTY_caretColor] = new PropertyDescriptor ( "caretColor", miComponenteTexto.ComponenteTexto.class, "getCaretColor", "setCaretColor" ); // NOI18N
-            properties[PROPERTY_caretListeners] = new PropertyDescriptor ( "caretListeners", miComponenteTexto.ComponenteTexto.class, "getCaretListeners", null ); // NOI18N
-            properties[PROPERTY_caretPosition] = new PropertyDescriptor ( "caretPosition", miComponenteTexto.ComponenteTexto.class, "getCaretPosition", "setCaretPosition" ); // NOI18N
-            properties[PROPERTY_colorModel] = new PropertyDescriptor ( "colorModel", miComponenteTexto.ComponenteTexto.class, "getColorModel", null ); // NOI18N
-            properties[PROPERTY_columns] = new PropertyDescriptor ( "columns", miComponenteTexto.ComponenteTexto.class, "getColumns", "setColumns" ); // NOI18N
-            properties[PROPERTY_component] = new IndexedPropertyDescriptor ( "component", miComponenteTexto.ComponenteTexto.class, null, null, "getComponent", null ); // NOI18N
-            properties[PROPERTY_componentCount] = new PropertyDescriptor ( "componentCount", miComponenteTexto.ComponenteTexto.class, "getComponentCount", null ); // NOI18N
-            properties[PROPERTY_componentListeners] = new PropertyDescriptor ( "componentListeners", miComponenteTexto.ComponenteTexto.class, "getComponentListeners", null ); // NOI18N
-            properties[PROPERTY_componentOrientation] = new PropertyDescriptor ( "componentOrientation", miComponenteTexto.ComponenteTexto.class, "getComponentOrientation", "setComponentOrientation" ); // NOI18N
-            properties[PROPERTY_componentPopupMenu] = new PropertyDescriptor ( "componentPopupMenu", miComponenteTexto.ComponenteTexto.class, "getComponentPopupMenu", "setComponentPopupMenu" ); // NOI18N
-            properties[PROPERTY_components] = new PropertyDescriptor ( "components", miComponenteTexto.ComponenteTexto.class, "getComponents", null ); // NOI18N
-            properties[PROPERTY_containerListeners] = new PropertyDescriptor ( "containerListeners", miComponenteTexto.ComponenteTexto.class, "getContainerListeners", null ); // NOI18N
-            properties[PROPERTY_cursor] = new PropertyDescriptor ( "cursor", miComponenteTexto.ComponenteTexto.class, "getCursor", "setCursor" ); // NOI18N
-            properties[PROPERTY_cursorSet] = new PropertyDescriptor ( "cursorSet", miComponenteTexto.ComponenteTexto.class, "isCursorSet", null ); // NOI18N
-            properties[PROPERTY_debugGraphicsOptions] = new PropertyDescriptor ( "debugGraphicsOptions", miComponenteTexto.ComponenteTexto.class, "getDebugGraphicsOptions", "setDebugGraphicsOptions" ); // NOI18N
-            properties[PROPERTY_disabledTextColor] = new PropertyDescriptor ( "disabledTextColor", miComponenteTexto.ComponenteTexto.class, "getDisabledTextColor", "setDisabledTextColor" ); // NOI18N
-            properties[PROPERTY_displayable] = new PropertyDescriptor ( "displayable", miComponenteTexto.ComponenteTexto.class, "isDisplayable", null ); // NOI18N
-            properties[PROPERTY_document] = new PropertyDescriptor ( "document", miComponenteTexto.ComponenteTexto.class, "getDocument", "setDocument" ); // NOI18N
-            properties[PROPERTY_doubleBuffered] = new PropertyDescriptor ( "doubleBuffered", miComponenteTexto.ComponenteTexto.class, "isDoubleBuffered", "setDoubleBuffered" ); // NOI18N
-            properties[PROPERTY_dragEnabled] = new PropertyDescriptor ( "dragEnabled", miComponenteTexto.ComponenteTexto.class, "getDragEnabled", "setDragEnabled" ); // NOI18N
-            properties[PROPERTY_dropLocation] = new PropertyDescriptor ( "dropLocation", miComponenteTexto.ComponenteTexto.class, "getDropLocation", null ); // NOI18N
-            properties[PROPERTY_dropMode] = new PropertyDescriptor ( "dropMode", miComponenteTexto.ComponenteTexto.class, "getDropMode", "setDropMode" ); // NOI18N
-            properties[PROPERTY_dropTarget] = new PropertyDescriptor ( "dropTarget", miComponenteTexto.ComponenteTexto.class, "getDropTarget", "setDropTarget" ); // NOI18N
-            properties[PROPERTY_editable] = new PropertyDescriptor ( "editable", miComponenteTexto.ComponenteTexto.class, "isEditable", "setEditable" ); // NOI18N
-            properties[PROPERTY_enabled] = new PropertyDescriptor ( "enabled", miComponenteTexto.ComponenteTexto.class, "isEnabled", "setEnabled" ); // NOI18N
-            properties[PROPERTY_focusable] = new PropertyDescriptor ( "focusable", miComponenteTexto.ComponenteTexto.class, "isFocusable", "setFocusable" ); // NOI18N
-            properties[PROPERTY_focusAccelerator] = new PropertyDescriptor ( "focusAccelerator", miComponenteTexto.ComponenteTexto.class, "getFocusAccelerator", "setFocusAccelerator" ); // NOI18N
-            properties[PROPERTY_focusCycleRoot] = new PropertyDescriptor ( "focusCycleRoot", miComponenteTexto.ComponenteTexto.class, "isFocusCycleRoot", "setFocusCycleRoot" ); // NOI18N
-            properties[PROPERTY_focusCycleRootAncestor] = new PropertyDescriptor ( "focusCycleRootAncestor", miComponenteTexto.ComponenteTexto.class, "getFocusCycleRootAncestor", null ); // NOI18N
-            properties[PROPERTY_focusListeners] = new PropertyDescriptor ( "focusListeners", miComponenteTexto.ComponenteTexto.class, "getFocusListeners", null ); // NOI18N
-            properties[PROPERTY_focusOwner] = new PropertyDescriptor ( "focusOwner", miComponenteTexto.ComponenteTexto.class, "isFocusOwner", null ); // NOI18N
-            properties[PROPERTY_focusTraversable] = new PropertyDescriptor ( "focusTraversable", miComponenteTexto.ComponenteTexto.class, "isFocusTraversable", null ); // NOI18N
-            properties[PROPERTY_focusTraversalKeys] = new IndexedPropertyDescriptor ( "focusTraversalKeys", miComponenteTexto.ComponenteTexto.class, null, null, null, "setFocusTraversalKeys" ); // NOI18N
-            properties[PROPERTY_focusTraversalKeysEnabled] = new PropertyDescriptor ( "focusTraversalKeysEnabled", miComponenteTexto.ComponenteTexto.class, "getFocusTraversalKeysEnabled", "setFocusTraversalKeysEnabled" ); // NOI18N
-            properties[PROPERTY_focusTraversalPolicy] = new PropertyDescriptor ( "focusTraversalPolicy", miComponenteTexto.ComponenteTexto.class, "getFocusTraversalPolicy", "setFocusTraversalPolicy" ); // NOI18N
-            properties[PROPERTY_focusTraversalPolicyProvider] = new PropertyDescriptor ( "focusTraversalPolicyProvider", miComponenteTexto.ComponenteTexto.class, "isFocusTraversalPolicyProvider", "setFocusTraversalPolicyProvider" ); // NOI18N
-            properties[PROPERTY_focusTraversalPolicySet] = new PropertyDescriptor ( "focusTraversalPolicySet", miComponenteTexto.ComponenteTexto.class, "isFocusTraversalPolicySet", null ); // NOI18N
-            properties[PROPERTY_font] = new PropertyDescriptor ( "font", miComponenteTexto.ComponenteTexto.class, "getFont", "setFont" ); // NOI18N
-            properties[PROPERTY_fontSet] = new PropertyDescriptor ( "fontSet", miComponenteTexto.ComponenteTexto.class, "isFontSet", null ); // NOI18N
-            properties[PROPERTY_foreground] = new PropertyDescriptor ( "foreground", miComponenteTexto.ComponenteTexto.class, "getForeground", "setForeground" ); // NOI18N
-            properties[PROPERTY_foregroundSet] = new PropertyDescriptor ( "foregroundSet", miComponenteTexto.ComponenteTexto.class, "isForegroundSet", null ); // NOI18N
-            properties[PROPERTY_graphics] = new PropertyDescriptor ( "graphics", miComponenteTexto.ComponenteTexto.class, "getGraphics", null ); // NOI18N
-            properties[PROPERTY_graphicsConfiguration] = new PropertyDescriptor ( "graphicsConfiguration", miComponenteTexto.ComponenteTexto.class, "getGraphicsConfiguration", null ); // NOI18N
-            properties[PROPERTY_height] = new PropertyDescriptor ( "height", miComponenteTexto.ComponenteTexto.class, "getHeight", null ); // NOI18N
-            properties[PROPERTY_hierarchyBoundsListeners] = new PropertyDescriptor ( "hierarchyBoundsListeners", miComponenteTexto.ComponenteTexto.class, "getHierarchyBoundsListeners", null ); // NOI18N
-            properties[PROPERTY_hierarchyListeners] = new PropertyDescriptor ( "hierarchyListeners", miComponenteTexto.ComponenteTexto.class, "getHierarchyListeners", null ); // NOI18N
-            properties[PROPERTY_highlighter] = new PropertyDescriptor ( "highlighter", miComponenteTexto.ComponenteTexto.class, "getHighlighter", "setHighlighter" ); // NOI18N
-            properties[PROPERTY_horizontalAlignment] = new PropertyDescriptor ( "horizontalAlignment", miComponenteTexto.ComponenteTexto.class, "getHorizontalAlignment", "setHorizontalAlignment" ); // NOI18N
-            properties[PROPERTY_horizontalVisibility] = new PropertyDescriptor ( "horizontalVisibility", miComponenteTexto.ComponenteTexto.class, "getHorizontalVisibility", null ); // NOI18N
-            properties[PROPERTY_ignoreRepaint] = new PropertyDescriptor ( "ignoreRepaint", miComponenteTexto.ComponenteTexto.class, "getIgnoreRepaint", "setIgnoreRepaint" ); // NOI18N
-            properties[PROPERTY_inheritsPopupMenu] = new PropertyDescriptor ( "inheritsPopupMenu", miComponenteTexto.ComponenteTexto.class, "getInheritsPopupMenu", "setInheritsPopupMenu" ); // NOI18N
-            properties[PROPERTY_inputContext] = new PropertyDescriptor ( "inputContext", miComponenteTexto.ComponenteTexto.class, "getInputContext", null ); // NOI18N
-            properties[PROPERTY_inputMap] = new PropertyDescriptor ( "inputMap", miComponenteTexto.ComponenteTexto.class, "getInputMap", null ); // NOI18N
-            properties[PROPERTY_inputMethodListeners] = new PropertyDescriptor ( "inputMethodListeners", miComponenteTexto.ComponenteTexto.class, "getInputMethodListeners", null ); // NOI18N
-            properties[PROPERTY_inputMethodRequests] = new PropertyDescriptor ( "inputMethodRequests", miComponenteTexto.ComponenteTexto.class, "getInputMethodRequests", null ); // NOI18N
-            properties[PROPERTY_inputVerifier] = new PropertyDescriptor ( "inputVerifier", miComponenteTexto.ComponenteTexto.class, "getInputVerifier", "setInputVerifier" ); // NOI18N
-            properties[PROPERTY_insets] = new PropertyDescriptor ( "insets", miComponenteTexto.ComponenteTexto.class, "getInsets", null ); // NOI18N
-            properties[PROPERTY_keyListeners] = new PropertyDescriptor ( "keyListeners", miComponenteTexto.ComponenteTexto.class, "getKeyListeners", null ); // NOI18N
-            properties[PROPERTY_keymap] = new PropertyDescriptor ( "keymap", miComponenteTexto.ComponenteTexto.class, "getKeymap", "setKeymap" ); // NOI18N
-            properties[PROPERTY_layout] = new PropertyDescriptor ( "layout", miComponenteTexto.ComponenteTexto.class, "getLayout", "setLayout" ); // NOI18N
-            properties[PROPERTY_lightweight] = new PropertyDescriptor ( "lightweight", miComponenteTexto.ComponenteTexto.class, "isLightweight", null ); // NOI18N
-            properties[PROPERTY_locale] = new PropertyDescriptor ( "locale", miComponenteTexto.ComponenteTexto.class, "getLocale", "setLocale" ); // NOI18N
-            properties[PROPERTY_location] = new PropertyDescriptor ( "location", miComponenteTexto.ComponenteTexto.class, "getLocation", "setLocation" ); // NOI18N
-            properties[PROPERTY_locationOnScreen] = new PropertyDescriptor ( "locationOnScreen", miComponenteTexto.ComponenteTexto.class, "getLocationOnScreen", null ); // NOI18N
-            properties[PROPERTY_managingFocus] = new PropertyDescriptor ( "managingFocus", miComponenteTexto.ComponenteTexto.class, "isManagingFocus", null ); // NOI18N
-            properties[PROPERTY_margin] = new PropertyDescriptor ( "margin", miComponenteTexto.ComponenteTexto.class, "getMargin", "setMargin" ); // NOI18N
-            properties[PROPERTY_maximumSize] = new PropertyDescriptor ( "maximumSize", miComponenteTexto.ComponenteTexto.class, "getMaximumSize", "setMaximumSize" ); // NOI18N
-            properties[PROPERTY_maximumSizeSet] = new PropertyDescriptor ( "maximumSizeSet", miComponenteTexto.ComponenteTexto.class, "isMaximumSizeSet", null ); // NOI18N
-            properties[PROPERTY_minimumSize] = new PropertyDescriptor ( "minimumSize", miComponenteTexto.ComponenteTexto.class, "getMinimumSize", "setMinimumSize" ); // NOI18N
-            properties[PROPERTY_minimumSizeSet] = new PropertyDescriptor ( "minimumSizeSet", miComponenteTexto.ComponenteTexto.class, "isMinimumSizeSet", null ); // NOI18N
-            properties[PROPERTY_mouseListeners] = new PropertyDescriptor ( "mouseListeners", miComponenteTexto.ComponenteTexto.class, "getMouseListeners", null ); // NOI18N
-            properties[PROPERTY_mouseMotionListeners] = new PropertyDescriptor ( "mouseMotionListeners", miComponenteTexto.ComponenteTexto.class, "getMouseMotionListeners", null ); // NOI18N
-            properties[PROPERTY_mousePosition] = new PropertyDescriptor ( "mousePosition", miComponenteTexto.ComponenteTexto.class, "getMousePosition", null ); // NOI18N
-            properties[PROPERTY_mouseWheelListeners] = new PropertyDescriptor ( "mouseWheelListeners", miComponenteTexto.ComponenteTexto.class, "getMouseWheelListeners", null ); // NOI18N
-            properties[PROPERTY_name] = new PropertyDescriptor ( "name", miComponenteTexto.ComponenteTexto.class, "getName", "setName" ); // NOI18N
-            properties[PROPERTY_navigationFilter] = new PropertyDescriptor ( "navigationFilter", miComponenteTexto.ComponenteTexto.class, "getNavigationFilter", "setNavigationFilter" ); // NOI18N
-            properties[PROPERTY_nextFocusableComponent] = new PropertyDescriptor ( "nextFocusableComponent", miComponenteTexto.ComponenteTexto.class, "getNextFocusableComponent", "setNextFocusableComponent" ); // NOI18N
-            properties[PROPERTY_opaque] = new PropertyDescriptor ( "opaque", miComponenteTexto.ComponenteTexto.class, "isOpaque", "setOpaque" ); // NOI18N
-            properties[PROPERTY_optimizedDrawingEnabled] = new PropertyDescriptor ( "optimizedDrawingEnabled", miComponenteTexto.ComponenteTexto.class, "isOptimizedDrawingEnabled", null ); // NOI18N
-            properties[PROPERTY_paintingForPrint] = new PropertyDescriptor ( "paintingForPrint", miComponenteTexto.ComponenteTexto.class, "isPaintingForPrint", null ); // NOI18N
-            properties[PROPERTY_paintingTile] = new PropertyDescriptor ( "paintingTile", miComponenteTexto.ComponenteTexto.class, "isPaintingTile", null ); // NOI18N
-            properties[PROPERTY_parent] = new PropertyDescriptor ( "parent", miComponenteTexto.ComponenteTexto.class, "getParent", null ); // NOI18N
-            properties[PROPERTY_peer] = new PropertyDescriptor ( "peer", miComponenteTexto.ComponenteTexto.class, "getPeer", null ); // NOI18N
-            properties[PROPERTY_preferredScrollableViewportSize] = new PropertyDescriptor ( "preferredScrollableViewportSize", miComponenteTexto.ComponenteTexto.class, "getPreferredScrollableViewportSize", null ); // NOI18N
-            properties[PROPERTY_preferredSize] = new PropertyDescriptor ( "preferredSize", miComponenteTexto.ComponenteTexto.class, "getPreferredSize", "setPreferredSize" ); // NOI18N
-            properties[PROPERTY_preferredSizeSet] = new PropertyDescriptor ( "preferredSizeSet", miComponenteTexto.ComponenteTexto.class, "isPreferredSizeSet", null ); // NOI18N
-            properties[PROPERTY_propertyChangeListeners] = new PropertyDescriptor ( "propertyChangeListeners", miComponenteTexto.ComponenteTexto.class, "getPropertyChangeListeners", null ); // NOI18N
-            properties[PROPERTY_registeredKeyStrokes] = new PropertyDescriptor ( "registeredKeyStrokes", miComponenteTexto.ComponenteTexto.class, "getRegisteredKeyStrokes", null ); // NOI18N
-            properties[PROPERTY_requestFocusEnabled] = new PropertyDescriptor ( "requestFocusEnabled", miComponenteTexto.ComponenteTexto.class, "isRequestFocusEnabled", "setRequestFocusEnabled" ); // NOI18N
-            properties[PROPERTY_rootPane] = new PropertyDescriptor ( "rootPane", miComponenteTexto.ComponenteTexto.class, "getRootPane", null ); // NOI18N
-            properties[PROPERTY_scrollableTracksViewportHeight] = new PropertyDescriptor ( "scrollableTracksViewportHeight", miComponenteTexto.ComponenteTexto.class, "getScrollableTracksViewportHeight", null ); // NOI18N
-            properties[PROPERTY_scrollableTracksViewportWidth] = new PropertyDescriptor ( "scrollableTracksViewportWidth", miComponenteTexto.ComponenteTexto.class, "getScrollableTracksViewportWidth", null ); // NOI18N
-            properties[PROPERTY_scrollOffset] = new PropertyDescriptor ( "scrollOffset", miComponenteTexto.ComponenteTexto.class, "getScrollOffset", "setScrollOffset" ); // NOI18N
-            properties[PROPERTY_selectedText] = new PropertyDescriptor ( "selectedText", miComponenteTexto.ComponenteTexto.class, "getSelectedText", null ); // NOI18N
-            properties[PROPERTY_selectedTextColor] = new PropertyDescriptor ( "selectedTextColor", miComponenteTexto.ComponenteTexto.class, "getSelectedTextColor", "setSelectedTextColor" ); // NOI18N
-            properties[PROPERTY_selectionColor] = new PropertyDescriptor ( "selectionColor", miComponenteTexto.ComponenteTexto.class, "getSelectionColor", "setSelectionColor" ); // NOI18N
-            properties[PROPERTY_selectionEnd] = new PropertyDescriptor ( "selectionEnd", miComponenteTexto.ComponenteTexto.class, "getSelectionEnd", "setSelectionEnd" ); // NOI18N
-            properties[PROPERTY_selectionStart] = new PropertyDescriptor ( "selectionStart", miComponenteTexto.ComponenteTexto.class, "getSelectionStart", "setSelectionStart" ); // NOI18N
-            properties[PROPERTY_showing] = new PropertyDescriptor ( "showing", miComponenteTexto.ComponenteTexto.class, "isShowing", null ); // NOI18N
-            properties[PROPERTY_size] = new PropertyDescriptor ( "size", miComponenteTexto.ComponenteTexto.class, "getSize", "setSize" ); // NOI18N
-            properties[PROPERTY_text] = new PropertyDescriptor ( "text", miComponenteTexto.ComponenteTexto.class, "getText", "setText" ); // NOI18N
-            properties[PROPERTY_tipo] = new PropertyDescriptor ( "tipo", miComponenteTexto.ComponenteTexto.class, "getTipo", "setTipo" ); // NOI18N
-            properties[PROPERTY_tipo].setPropertyEditorClass ( miComponenteTexto.tipoPropertyEditor.class );
-            properties[PROPERTY_toolkit] = new PropertyDescriptor ( "toolkit", miComponenteTexto.ComponenteTexto.class, "getToolkit", null ); // NOI18N
-            properties[PROPERTY_toolTipText] = new PropertyDescriptor ( "toolTipText", miComponenteTexto.ComponenteTexto.class, "getToolTipText", "setToolTipText" ); // NOI18N
-            properties[PROPERTY_topLevelAncestor] = new PropertyDescriptor ( "topLevelAncestor", miComponenteTexto.ComponenteTexto.class, "getTopLevelAncestor", null ); // NOI18N
-            properties[PROPERTY_transferHandler] = new PropertyDescriptor ( "transferHandler", miComponenteTexto.ComponenteTexto.class, "getTransferHandler", "setTransferHandler" ); // NOI18N
-            properties[PROPERTY_treeLock] = new PropertyDescriptor ( "treeLock", miComponenteTexto.ComponenteTexto.class, "getTreeLock", null ); // NOI18N
-            properties[PROPERTY_UI] = new PropertyDescriptor ( "UI", miComponenteTexto.ComponenteTexto.class, "getUI", "setUI" ); // NOI18N
-            properties[PROPERTY_UIClassID] = new PropertyDescriptor ( "UIClassID", miComponenteTexto.ComponenteTexto.class, "getUIClassID", null ); // NOI18N
-            properties[PROPERTY_valid] = new PropertyDescriptor ( "valid", miComponenteTexto.ComponenteTexto.class, "isValid", null ); // NOI18N
-            properties[PROPERTY_validateRoot] = new PropertyDescriptor ( "validateRoot", miComponenteTexto.ComponenteTexto.class, "isValidateRoot", null ); // NOI18N
-            properties[PROPERTY_verifyInputWhenFocusTarget] = new PropertyDescriptor ( "verifyInputWhenFocusTarget", miComponenteTexto.ComponenteTexto.class, "getVerifyInputWhenFocusTarget", "setVerifyInputWhenFocusTarget" ); // NOI18N
-            properties[PROPERTY_vetoableChangeListeners] = new PropertyDescriptor ( "vetoableChangeListeners", miComponenteTexto.ComponenteTexto.class, "getVetoableChangeListeners", null ); // NOI18N
-            properties[PROPERTY_visible] = new PropertyDescriptor ( "visible", miComponenteTexto.ComponenteTexto.class, "isVisible", "setVisible" ); // NOI18N
-            properties[PROPERTY_visibleRect] = new PropertyDescriptor ( "visibleRect", miComponenteTexto.ComponenteTexto.class, "getVisibleRect", null ); // NOI18N
-            properties[PROPERTY_width] = new PropertyDescriptor ( "width", miComponenteTexto.ComponenteTexto.class, "getWidth", null ); // NOI18N
-            properties[PROPERTY_x] = new PropertyDescriptor ( "x", miComponenteTexto.ComponenteTexto.class, "getX", null ); // NOI18N
-            properties[PROPERTY_y] = new PropertyDescriptor ( "y", miComponenteTexto.ComponenteTexto.class, "getY", null ); // NOI18N
+            properties[PROPERTY_accessibleContext] = new PropertyDescriptor ( "accessibleContext", ComponenteTextoBean.ComponenteTexto.class, "getAccessibleContext", null ); // NOI18N
+            properties[PROPERTY_action] = new PropertyDescriptor ( "action", ComponenteTextoBean.ComponenteTexto.class, "getAction", "setAction" ); // NOI18N
+            properties[PROPERTY_actionCommand] = new PropertyDescriptor ( "actionCommand", ComponenteTextoBean.ComponenteTexto.class, null, "setActionCommand" ); // NOI18N
+            properties[PROPERTY_actionListeners] = new PropertyDescriptor ( "actionListeners", ComponenteTextoBean.ComponenteTexto.class, "getActionListeners", null ); // NOI18N
+            properties[PROPERTY_actionMap] = new PropertyDescriptor ( "actionMap", ComponenteTextoBean.ComponenteTexto.class, "getActionMap", "setActionMap" ); // NOI18N
+            properties[PROPERTY_actions] = new PropertyDescriptor ( "actions", ComponenteTextoBean.ComponenteTexto.class, "getActions", null ); // NOI18N
+            properties[PROPERTY_alignmentX] = new PropertyDescriptor ( "alignmentX", ComponenteTextoBean.ComponenteTexto.class, "getAlignmentX", "setAlignmentX" ); // NOI18N
+            properties[PROPERTY_alignmentY] = new PropertyDescriptor ( "alignmentY", ComponenteTextoBean.ComponenteTexto.class, "getAlignmentY", "setAlignmentY" ); // NOI18N
+            properties[PROPERTY_ancestorListeners] = new PropertyDescriptor ( "ancestorListeners", ComponenteTextoBean.ComponenteTexto.class, "getAncestorListeners", null ); // NOI18N
+            properties[PROPERTY_ancho] = new PropertyDescriptor ( "ancho", ComponenteTextoBean.ComponenteTexto.class, "getAncho", "setAncho" ); // NOI18N
+            properties[PROPERTY_ancho].setPropertyEditorClass (ComponenteTextoBean.anchoPropertyEditor.class );
+            properties[PROPERTY_autoscrolls] = new PropertyDescriptor ( "autoscrolls", ComponenteTextoBean.ComponenteTexto.class, "getAutoscrolls", "setAutoscrolls" ); // NOI18N
+            properties[PROPERTY_background] = new PropertyDescriptor ( "background", ComponenteTextoBean.ComponenteTexto.class, "getBackground", "setBackground" ); // NOI18N
+            properties[PROPERTY_backgroundSet] = new PropertyDescriptor ( "backgroundSet", ComponenteTextoBean.ComponenteTexto.class, "isBackgroundSet", null ); // NOI18N
+            properties[PROPERTY_baselineResizeBehavior] = new PropertyDescriptor ( "baselineResizeBehavior", ComponenteTextoBean.ComponenteTexto.class, "getBaselineResizeBehavior", null ); // NOI18N
+            properties[PROPERTY_border] = new PropertyDescriptor ( "border", ComponenteTextoBean.ComponenteTexto.class, "getBorder", "setBorder" ); // NOI18N
+            properties[PROPERTY_bounds] = new PropertyDescriptor ( "bounds", ComponenteTextoBean.ComponenteTexto.class, "getBounds", "setBounds" ); // NOI18N
+            properties[PROPERTY_caret] = new PropertyDescriptor ( "caret", ComponenteTextoBean.ComponenteTexto.class, "getCaret", "setCaret" ); // NOI18N
+            properties[PROPERTY_caretColor] = new PropertyDescriptor ( "caretColor", ComponenteTextoBean.ComponenteTexto.class, "getCaretColor", "setCaretColor" ); // NOI18N
+            properties[PROPERTY_caretListeners] = new PropertyDescriptor ( "caretListeners", ComponenteTextoBean.ComponenteTexto.class, "getCaretListeners", null ); // NOI18N
+            properties[PROPERTY_caretPosition] = new PropertyDescriptor ( "caretPosition", ComponenteTextoBean.ComponenteTexto.class, "getCaretPosition", "setCaretPosition" ); // NOI18N
+            properties[PROPERTY_colorModel] = new PropertyDescriptor ( "colorModel", ComponenteTextoBean.ComponenteTexto.class, "getColorModel", null ); // NOI18N
+            properties[PROPERTY_columns] = new PropertyDescriptor ( "columns", ComponenteTextoBean.ComponenteTexto.class, "getColumns", "setColumns" ); // NOI18N
+            properties[PROPERTY_component] = new IndexedPropertyDescriptor ( "component", ComponenteTextoBean.ComponenteTexto.class, null, null, "getComponent", null ); // NOI18N
+            properties[PROPERTY_componentCount] = new PropertyDescriptor ( "componentCount", ComponenteTextoBean.ComponenteTexto.class, "getComponentCount", null ); // NOI18N
+            properties[PROPERTY_componentListeners] = new PropertyDescriptor ( "componentListeners", ComponenteTextoBean.ComponenteTexto.class, "getComponentListeners", null ); // NOI18N
+            properties[PROPERTY_componentOrientation] = new PropertyDescriptor ( "componentOrientation", ComponenteTextoBean.ComponenteTexto.class, "getComponentOrientation", "setComponentOrientation" ); // NOI18N
+            properties[PROPERTY_componentPopupMenu] = new PropertyDescriptor ( "componentPopupMenu", ComponenteTextoBean.ComponenteTexto.class, "getComponentPopupMenu", "setComponentPopupMenu" ); // NOI18N
+            properties[PROPERTY_components] = new PropertyDescriptor ( "components", ComponenteTextoBean.ComponenteTexto.class, "getComponents", null ); // NOI18N
+            properties[PROPERTY_containerListeners] = new PropertyDescriptor ( "containerListeners", ComponenteTextoBean.ComponenteTexto.class, "getContainerListeners", null ); // NOI18N
+            properties[PROPERTY_cursor] = new PropertyDescriptor ( "cursor", ComponenteTextoBean.ComponenteTexto.class, "getCursor", "setCursor" ); // NOI18N
+            properties[PROPERTY_cursorSet] = new PropertyDescriptor ( "cursorSet", ComponenteTextoBean.ComponenteTexto.class, "isCursorSet", null ); // NOI18N
+            properties[PROPERTY_debugGraphicsOptions] = new PropertyDescriptor ( "debugGraphicsOptions", ComponenteTextoBean.ComponenteTexto.class, "getDebugGraphicsOptions", "setDebugGraphicsOptions" ); // NOI18N
+            properties[PROPERTY_disabledTextColor] = new PropertyDescriptor ( "disabledTextColor", ComponenteTextoBean.ComponenteTexto.class, "getDisabledTextColor", "setDisabledTextColor" ); // NOI18N
+            properties[PROPERTY_displayable] = new PropertyDescriptor ( "displayable", ComponenteTextoBean.ComponenteTexto.class, "isDisplayable", null ); // NOI18N
+            properties[PROPERTY_document] = new PropertyDescriptor ( "document", ComponenteTextoBean.ComponenteTexto.class, "getDocument", "setDocument" ); // NOI18N
+            properties[PROPERTY_doubleBuffered] = new PropertyDescriptor ( "doubleBuffered", ComponenteTextoBean.ComponenteTexto.class, "isDoubleBuffered", "setDoubleBuffered" ); // NOI18N
+            properties[PROPERTY_dragEnabled] = new PropertyDescriptor ( "dragEnabled", ComponenteTextoBean.ComponenteTexto.class, "getDragEnabled", "setDragEnabled" ); // NOI18N
+            properties[PROPERTY_dropLocation] = new PropertyDescriptor ( "dropLocation", ComponenteTextoBean.ComponenteTexto.class, "getDropLocation", null ); // NOI18N
+            properties[PROPERTY_dropMode] = new PropertyDescriptor ( "dropMode", ComponenteTextoBean.ComponenteTexto.class, "getDropMode", "setDropMode" ); // NOI18N
+            properties[PROPERTY_dropTarget] = new PropertyDescriptor ( "dropTarget", ComponenteTextoBean.ComponenteTexto.class, "getDropTarget", "setDropTarget" ); // NOI18N
+            properties[PROPERTY_editable] = new PropertyDescriptor ( "editable", ComponenteTextoBean.ComponenteTexto.class, "isEditable", "setEditable" ); // NOI18N
+            properties[PROPERTY_enabled] = new PropertyDescriptor ( "enabled", ComponenteTextoBean.ComponenteTexto.class, "isEnabled", "setEnabled" ); // NOI18N
+            properties[PROPERTY_focusable] = new PropertyDescriptor ( "focusable", ComponenteTextoBean.ComponenteTexto.class, "isFocusable", "setFocusable" ); // NOI18N
+            properties[PROPERTY_focusAccelerator] = new PropertyDescriptor ( "focusAccelerator", ComponenteTextoBean.ComponenteTexto.class, "getFocusAccelerator", "setFocusAccelerator" ); // NOI18N
+            properties[PROPERTY_focusCycleRoot] = new PropertyDescriptor ( "focusCycleRoot", ComponenteTextoBean.ComponenteTexto.class, "isFocusCycleRoot", "setFocusCycleRoot" ); // NOI18N
+            properties[PROPERTY_focusCycleRootAncestor] = new PropertyDescriptor ( "focusCycleRootAncestor", ComponenteTextoBean.ComponenteTexto.class, "getFocusCycleRootAncestor", null ); // NOI18N
+            properties[PROPERTY_focusListeners] = new PropertyDescriptor ( "focusListeners", ComponenteTextoBean.ComponenteTexto.class, "getFocusListeners", null ); // NOI18N
+            properties[PROPERTY_focusOwner] = new PropertyDescriptor ( "focusOwner", ComponenteTextoBean.ComponenteTexto.class, "isFocusOwner", null ); // NOI18N
+            properties[PROPERTY_focusTraversable] = new PropertyDescriptor ( "focusTraversable", ComponenteTextoBean.ComponenteTexto.class, "isFocusTraversable", null ); // NOI18N
+            properties[PROPERTY_focusTraversalKeys] = new IndexedPropertyDescriptor ( "focusTraversalKeys", ComponenteTextoBean.ComponenteTexto.class, null, null, null, "setFocusTraversalKeys" ); // NOI18N
+            properties[PROPERTY_focusTraversalKeysEnabled] = new PropertyDescriptor ( "focusTraversalKeysEnabled", ComponenteTextoBean.ComponenteTexto.class, "getFocusTraversalKeysEnabled", "setFocusTraversalKeysEnabled" ); // NOI18N
+            properties[PROPERTY_focusTraversalPolicy] = new PropertyDescriptor ( "focusTraversalPolicy", ComponenteTextoBean.ComponenteTexto.class, "getFocusTraversalPolicy", "setFocusTraversalPolicy" ); // NOI18N
+            properties[PROPERTY_focusTraversalPolicyProvider] = new PropertyDescriptor ( "focusTraversalPolicyProvider", ComponenteTextoBean.ComponenteTexto.class, "isFocusTraversalPolicyProvider", "setFocusTraversalPolicyProvider" ); // NOI18N
+            properties[PROPERTY_focusTraversalPolicySet] = new PropertyDescriptor ( "focusTraversalPolicySet", ComponenteTextoBean.ComponenteTexto.class, "isFocusTraversalPolicySet", null ); // NOI18N
+            properties[PROPERTY_font] = new PropertyDescriptor ( "font", ComponenteTextoBean.ComponenteTexto.class, "getFont", "setFont" ); // NOI18N
+            properties[PROPERTY_fontSet] = new PropertyDescriptor ( "fontSet", ComponenteTextoBean.ComponenteTexto.class, "isFontSet", null ); // NOI18N
+            properties[PROPERTY_foreground] = new PropertyDescriptor ( "foreground", ComponenteTextoBean.ComponenteTexto.class, "getForeground", "setForeground" ); // NOI18N
+            properties[PROPERTY_foregroundSet] = new PropertyDescriptor ( "foregroundSet", ComponenteTextoBean.ComponenteTexto.class, "isForegroundSet", null ); // NOI18N
+            properties[PROPERTY_graphics] = new PropertyDescriptor ( "graphics", ComponenteTextoBean.ComponenteTexto.class, "getGraphics", null ); // NOI18N
+            properties[PROPERTY_graphicsConfiguration] = new PropertyDescriptor ( "graphicsConfiguration", ComponenteTextoBean.ComponenteTexto.class, "getGraphicsConfiguration", null ); // NOI18N
+            properties[PROPERTY_height] = new PropertyDescriptor ( "height", ComponenteTextoBean.ComponenteTexto.class, "getHeight", null ); // NOI18N
+            properties[PROPERTY_hierarchyBoundsListeners] = new PropertyDescriptor ( "hierarchyBoundsListeners", ComponenteTextoBean.ComponenteTexto.class, "getHierarchyBoundsListeners", null ); // NOI18N
+            properties[PROPERTY_hierarchyListeners] = new PropertyDescriptor ( "hierarchyListeners", ComponenteTextoBean.ComponenteTexto.class, "getHierarchyListeners", null ); // NOI18N
+            properties[PROPERTY_highlighter] = new PropertyDescriptor ( "highlighter", ComponenteTextoBean.ComponenteTexto.class, "getHighlighter", "setHighlighter" ); // NOI18N
+            properties[PROPERTY_horizontalAlignment] = new PropertyDescriptor ( "horizontalAlignment", ComponenteTextoBean.ComponenteTexto.class, "getHorizontalAlignment", "setHorizontalAlignment" ); // NOI18N
+            properties[PROPERTY_horizontalVisibility] = new PropertyDescriptor ( "horizontalVisibility", ComponenteTextoBean.ComponenteTexto.class, "getHorizontalVisibility", null ); // NOI18N
+            properties[PROPERTY_ignoreRepaint] = new PropertyDescriptor ( "ignoreRepaint", ComponenteTextoBean.ComponenteTexto.class, "getIgnoreRepaint", "setIgnoreRepaint" ); // NOI18N
+            properties[PROPERTY_inheritsPopupMenu] = new PropertyDescriptor ( "inheritsPopupMenu", ComponenteTextoBean.ComponenteTexto.class, "getInheritsPopupMenu", "setInheritsPopupMenu" ); // NOI18N
+            properties[PROPERTY_inputContext] = new PropertyDescriptor ( "inputContext", ComponenteTextoBean.ComponenteTexto.class, "getInputContext", null ); // NOI18N
+            properties[PROPERTY_inputMap] = new PropertyDescriptor ( "inputMap", ComponenteTextoBean.ComponenteTexto.class, "getInputMap", null ); // NOI18N
+            properties[PROPERTY_inputMethodListeners] = new PropertyDescriptor ( "inputMethodListeners", ComponenteTextoBean.ComponenteTexto.class, "getInputMethodListeners", null ); // NOI18N
+            properties[PROPERTY_inputMethodRequests] = new PropertyDescriptor ( "inputMethodRequests", ComponenteTextoBean.ComponenteTexto.class, "getInputMethodRequests", null ); // NOI18N
+            properties[PROPERTY_inputVerifier] = new PropertyDescriptor ( "inputVerifier", ComponenteTextoBean.ComponenteTexto.class, "getInputVerifier", "setInputVerifier" ); // NOI18N
+            properties[PROPERTY_insets] = new PropertyDescriptor ( "insets", ComponenteTextoBean.ComponenteTexto.class, "getInsets", null ); // NOI18N
+            properties[PROPERTY_keyListeners] = new PropertyDescriptor ( "keyListeners", ComponenteTextoBean.ComponenteTexto.class, "getKeyListeners", null ); // NOI18N
+            properties[PROPERTY_keymap] = new PropertyDescriptor ( "keymap", ComponenteTextoBean.ComponenteTexto.class, "getKeymap", "setKeymap" ); // NOI18N
+            properties[PROPERTY_layout] = new PropertyDescriptor ( "layout", ComponenteTextoBean.ComponenteTexto.class, "getLayout", "setLayout" ); // NOI18N
+            properties[PROPERTY_lightweight] = new PropertyDescriptor ( "lightweight", ComponenteTextoBean.ComponenteTexto.class, "isLightweight", null ); // NOI18N
+            properties[PROPERTY_locale] = new PropertyDescriptor ( "locale", ComponenteTextoBean.ComponenteTexto.class, "getLocale", "setLocale" ); // NOI18N
+            properties[PROPERTY_location] = new PropertyDescriptor ( "location", ComponenteTextoBean.ComponenteTexto.class, "getLocation", "setLocation" ); // NOI18N
+            properties[PROPERTY_locationOnScreen] = new PropertyDescriptor ( "locationOnScreen", ComponenteTextoBean.ComponenteTexto.class, "getLocationOnScreen", null ); // NOI18N
+            properties[PROPERTY_managingFocus] = new PropertyDescriptor ( "managingFocus", ComponenteTextoBean.ComponenteTexto.class, "isManagingFocus", null ); // NOI18N
+            properties[PROPERTY_margin] = new PropertyDescriptor ( "margin", ComponenteTextoBean.ComponenteTexto.class, "getMargin", "setMargin" ); // NOI18N
+            properties[PROPERTY_maximumSize] = new PropertyDescriptor ( "maximumSize", ComponenteTextoBean.ComponenteTexto.class, "getMaximumSize", "setMaximumSize" ); // NOI18N
+            properties[PROPERTY_maximumSizeSet] = new PropertyDescriptor ( "maximumSizeSet", ComponenteTextoBean.ComponenteTexto.class, "isMaximumSizeSet", null ); // NOI18N
+            properties[PROPERTY_minimumSize] = new PropertyDescriptor ( "minimumSize", ComponenteTextoBean.ComponenteTexto.class, "getMinimumSize", "setMinimumSize" ); // NOI18N
+            properties[PROPERTY_minimumSizeSet] = new PropertyDescriptor ( "minimumSizeSet", ComponenteTextoBean.ComponenteTexto.class, "isMinimumSizeSet", null ); // NOI18N
+            properties[PROPERTY_mouseListeners] = new PropertyDescriptor ( "mouseListeners", ComponenteTextoBean.ComponenteTexto.class, "getMouseListeners", null ); // NOI18N
+            properties[PROPERTY_mouseMotionListeners] = new PropertyDescriptor ( "mouseMotionListeners", ComponenteTextoBean.ComponenteTexto.class, "getMouseMotionListeners", null ); // NOI18N
+            properties[PROPERTY_mousePosition] = new PropertyDescriptor ( "mousePosition", ComponenteTextoBean.ComponenteTexto.class, "getMousePosition", null ); // NOI18N
+            properties[PROPERTY_mouseWheelListeners] = new PropertyDescriptor ( "mouseWheelListeners", ComponenteTextoBean.ComponenteTexto.class, "getMouseWheelListeners", null ); // NOI18N
+            properties[PROPERTY_name] = new PropertyDescriptor ( "name", ComponenteTextoBean.ComponenteTexto.class, "getName", "setName" ); // NOI18N
+            properties[PROPERTY_navigationFilter] = new PropertyDescriptor ( "navigationFilter", ComponenteTextoBean.ComponenteTexto.class, "getNavigationFilter", "setNavigationFilter" ); // NOI18N
+            properties[PROPERTY_nextFocusableComponent] = new PropertyDescriptor ( "nextFocusableComponent", ComponenteTextoBean.ComponenteTexto.class, "getNextFocusableComponent", "setNextFocusableComponent" ); // NOI18N
+            properties[PROPERTY_opaque] = new PropertyDescriptor ( "opaque", ComponenteTextoBean.ComponenteTexto.class, "isOpaque", "setOpaque" ); // NOI18N
+            properties[PROPERTY_optimizedDrawingEnabled] = new PropertyDescriptor ( "optimizedDrawingEnabled", ComponenteTextoBean.ComponenteTexto.class, "isOptimizedDrawingEnabled", null ); // NOI18N
+            properties[PROPERTY_paintingForPrint] = new PropertyDescriptor ( "paintingForPrint", ComponenteTextoBean.ComponenteTexto.class, "isPaintingForPrint", null ); // NOI18N
+            properties[PROPERTY_paintingTile] = new PropertyDescriptor ( "paintingTile", ComponenteTextoBean.ComponenteTexto.class, "isPaintingTile", null ); // NOI18N
+            properties[PROPERTY_parent] = new PropertyDescriptor ( "parent", ComponenteTextoBean.ComponenteTexto.class, "getParent", null ); // NOI18N
+            properties[PROPERTY_peer] = new PropertyDescriptor ( "peer", ComponenteTextoBean.ComponenteTexto.class, "getPeer", null ); // NOI18N
+            properties[PROPERTY_preferredScrollableViewportSize] = new PropertyDescriptor ( "preferredScrollableViewportSize", ComponenteTextoBean.ComponenteTexto.class, "getPreferredScrollableViewportSize", null ); // NOI18N
+            properties[PROPERTY_preferredSize] = new PropertyDescriptor ( "preferredSize", ComponenteTextoBean.ComponenteTexto.class, "getPreferredSize", "setPreferredSize" ); // NOI18N
+            properties[PROPERTY_preferredSizeSet] = new PropertyDescriptor ( "preferredSizeSet", ComponenteTextoBean.ComponenteTexto.class, "isPreferredSizeSet", null ); // NOI18N
+            properties[PROPERTY_propertyChangeListeners] = new PropertyDescriptor ( "propertyChangeListeners", ComponenteTextoBean.ComponenteTexto.class, "getPropertyChangeListeners", null ); // NOI18N
+            properties[PROPERTY_registeredKeyStrokes] = new PropertyDescriptor ( "registeredKeyStrokes", ComponenteTextoBean.ComponenteTexto.class, "getRegisteredKeyStrokes", null ); // NOI18N
+            properties[PROPERTY_requestFocusEnabled] = new PropertyDescriptor ( "requestFocusEnabled", ComponenteTextoBean.ComponenteTexto.class, "isRequestFocusEnabled", "setRequestFocusEnabled" ); // NOI18N
+            properties[PROPERTY_rootPane] = new PropertyDescriptor ( "rootPane", ComponenteTextoBean.ComponenteTexto.class, "getRootPane", null ); // NOI18N
+            properties[PROPERTY_scrollableTracksViewportHeight] = new PropertyDescriptor ( "scrollableTracksViewportHeight", ComponenteTextoBean.ComponenteTexto.class, "getScrollableTracksViewportHeight", null ); // NOI18N
+            properties[PROPERTY_scrollableTracksViewportWidth] = new PropertyDescriptor ( "scrollableTracksViewportWidth", ComponenteTextoBean.ComponenteTexto.class, "getScrollableTracksViewportWidth", null ); // NOI18N
+            properties[PROPERTY_scrollOffset] = new PropertyDescriptor ( "scrollOffset", ComponenteTextoBean.ComponenteTexto.class, "getScrollOffset", "setScrollOffset" ); // NOI18N
+            properties[PROPERTY_selectedText] = new PropertyDescriptor ( "selectedText", ComponenteTextoBean.ComponenteTexto.class, "getSelectedText", null ); // NOI18N
+            properties[PROPERTY_selectedTextColor] = new PropertyDescriptor ( "selectedTextColor", ComponenteTextoBean.ComponenteTexto.class, "getSelectedTextColor", "setSelectedTextColor" ); // NOI18N
+            properties[PROPERTY_selectionColor] = new PropertyDescriptor ( "selectionColor", ComponenteTextoBean.ComponenteTexto.class, "getSelectionColor", "setSelectionColor" ); // NOI18N
+            properties[PROPERTY_selectionEnd] = new PropertyDescriptor ( "selectionEnd", ComponenteTextoBean.ComponenteTexto.class, "getSelectionEnd", "setSelectionEnd" ); // NOI18N
+            properties[PROPERTY_selectionStart] = new PropertyDescriptor ( "selectionStart", ComponenteTextoBean.ComponenteTexto.class, "getSelectionStart", "setSelectionStart" ); // NOI18N
+            properties[PROPERTY_showing] = new PropertyDescriptor ( "showing", ComponenteTextoBean.ComponenteTexto.class, "isShowing", null ); // NOI18N
+            properties[PROPERTY_size] = new PropertyDescriptor ( "size", ComponenteTextoBean.ComponenteTexto.class, "getSize", "setSize" ); // NOI18N
+            properties[PROPERTY_text] = new PropertyDescriptor ( "text", ComponenteTextoBean.ComponenteTexto.class, "getText", "setText" ); // NOI18N
+            properties[PROPERTY_tipo] = new PropertyDescriptor ( "tipo", ComponenteTextoBean.ComponenteTexto.class, "getTipo", "setTipo" ); // NOI18N
+            properties[PROPERTY_tipo].setPropertyEditorClass (ComponenteTextoBean.tipoPropertyEditor.class );
+            properties[PROPERTY_toolkit] = new PropertyDescriptor ( "toolkit", ComponenteTextoBean.ComponenteTexto.class, "getToolkit", null ); // NOI18N
+            properties[PROPERTY_toolTipText] = new PropertyDescriptor ( "toolTipText", ComponenteTextoBean.ComponenteTexto.class, "getToolTipText", "setToolTipText" ); // NOI18N
+            properties[PROPERTY_topLevelAncestor] = new PropertyDescriptor ( "topLevelAncestor", ComponenteTextoBean.ComponenteTexto.class, "getTopLevelAncestor", null ); // NOI18N
+            properties[PROPERTY_transferHandler] = new PropertyDescriptor ( "transferHandler", ComponenteTextoBean.ComponenteTexto.class, "getTransferHandler", "setTransferHandler" ); // NOI18N
+            properties[PROPERTY_treeLock] = new PropertyDescriptor ( "treeLock", ComponenteTextoBean.ComponenteTexto.class, "getTreeLock", null ); // NOI18N
+            properties[PROPERTY_UI] = new PropertyDescriptor ( "UI", ComponenteTextoBean.ComponenteTexto.class, "getUI", "setUI" ); // NOI18N
+            properties[PROPERTY_UIClassID] = new PropertyDescriptor ( "UIClassID", ComponenteTextoBean.ComponenteTexto.class, "getUIClassID", null ); // NOI18N
+            properties[PROPERTY_valid] = new PropertyDescriptor ( "valid", ComponenteTextoBean.ComponenteTexto.class, "isValid", null ); // NOI18N
+            properties[PROPERTY_validateRoot] = new PropertyDescriptor ( "validateRoot", ComponenteTextoBean.ComponenteTexto.class, "isValidateRoot", null ); // NOI18N
+            properties[PROPERTY_verifyInputWhenFocusTarget] = new PropertyDescriptor ( "verifyInputWhenFocusTarget", ComponenteTextoBean.ComponenteTexto.class, "getVerifyInputWhenFocusTarget", "setVerifyInputWhenFocusTarget" ); // NOI18N
+            properties[PROPERTY_vetoableChangeListeners] = new PropertyDescriptor ( "vetoableChangeListeners", ComponenteTextoBean.ComponenteTexto.class, "getVetoableChangeListeners", null ); // NOI18N
+            properties[PROPERTY_visible] = new PropertyDescriptor ( "visible", ComponenteTextoBean.ComponenteTexto.class, "isVisible", "setVisible" ); // NOI18N
+            properties[PROPERTY_visibleRect] = new PropertyDescriptor ( "visibleRect", ComponenteTextoBean.ComponenteTexto.class, "getVisibleRect", null ); // NOI18N
+            properties[PROPERTY_width] = new PropertyDescriptor ( "width", ComponenteTextoBean.ComponenteTexto.class, "getWidth", null ); // NOI18N
+            properties[PROPERTY_x] = new PropertyDescriptor ( "x", ComponenteTextoBean.ComponenteTexto.class, "getX", null ); // NOI18N
+            properties[PROPERTY_y] = new PropertyDescriptor ( "y", ComponenteTextoBean.ComponenteTexto.class, "getY", null ); // NOI18N
         }
         catch(IntrospectionException e) {
             e.printStackTrace();
@@ -333,21 +333,21 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
         EventSetDescriptor[] eventSets = new EventSetDescriptor[15];
     
         try {
-            eventSets[EVENT_actionListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "actionListener", java.awt.event.ActionListener.class, new String[] {"actionPerformed"}, "addActionListener", "removeActionListener" ); // NOI18N
-            eventSets[EVENT_ancestorListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "ancestorListener", javax.swing.event.AncestorListener.class, new String[] {"ancestorAdded", "ancestorRemoved", "ancestorMoved"}, "addAncestorListener", "removeAncestorListener" ); // NOI18N
-            eventSets[EVENT_caretListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "caretListener", javax.swing.event.CaretListener.class, new String[] {"caretUpdate"}, "addCaretListener", "removeCaretListener" ); // NOI18N
-            eventSets[EVENT_componentListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "componentListener", java.awt.event.ComponentListener.class, new String[] {"componentResized", "componentMoved", "componentShown", "componentHidden"}, "addComponentListener", "removeComponentListener" ); // NOI18N
-            eventSets[EVENT_containerListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "containerListener", java.awt.event.ContainerListener.class, new String[] {"componentAdded", "componentRemoved"}, "addContainerListener", "removeContainerListener" ); // NOI18N
-            eventSets[EVENT_focusListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "focusListener", java.awt.event.FocusListener.class, new String[] {"focusGained", "focusLost"}, "addFocusListener", "removeFocusListener" ); // NOI18N
-            eventSets[EVENT_hierarchyBoundsListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "hierarchyBoundsListener", java.awt.event.HierarchyBoundsListener.class, new String[] {"ancestorMoved", "ancestorResized"}, "addHierarchyBoundsListener", "removeHierarchyBoundsListener" ); // NOI18N
-            eventSets[EVENT_hierarchyListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "hierarchyListener", java.awt.event.HierarchyListener.class, new String[] {"hierarchyChanged"}, "addHierarchyListener", "removeHierarchyListener" ); // NOI18N
-            eventSets[EVENT_inputMethodListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "inputMethodListener", java.awt.event.InputMethodListener.class, new String[] {"inputMethodTextChanged", "caretPositionChanged"}, "addInputMethodListener", "removeInputMethodListener" ); // NOI18N
-            eventSets[EVENT_keyListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "keyListener", java.awt.event.KeyListener.class, new String[] {"keyTyped", "keyPressed", "keyReleased"}, "addKeyListener", "removeKeyListener" ); // NOI18N
-            eventSets[EVENT_mouseListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "mouseListener", java.awt.event.MouseListener.class, new String[] {"mouseClicked", "mousePressed", "mouseReleased", "mouseEntered", "mouseExited"}, "addMouseListener", "removeMouseListener" ); // NOI18N
-            eventSets[EVENT_mouseMotionListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "mouseMotionListener", java.awt.event.MouseMotionListener.class, new String[] {"mouseDragged", "mouseMoved"}, "addMouseMotionListener", "removeMouseMotionListener" ); // NOI18N
-            eventSets[EVENT_mouseWheelListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "mouseWheelListener", java.awt.event.MouseWheelListener.class, new String[] {"mouseWheelMoved"}, "addMouseWheelListener", "removeMouseWheelListener" ); // NOI18N
-            eventSets[EVENT_propertyChangeListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "propertyChangeListener", java.beans.PropertyChangeListener.class, new String[] {"propertyChange"}, "addPropertyChangeListener", "removePropertyChangeListener" ); // NOI18N
-            eventSets[EVENT_vetoableChangeListener] = new EventSetDescriptor ( miComponenteTexto.ComponenteTexto.class, "vetoableChangeListener", java.beans.VetoableChangeListener.class, new String[] {"vetoableChange"}, "addVetoableChangeListener", "removeVetoableChangeListener" ); // NOI18N
+            eventSets[EVENT_actionListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "actionListener", java.awt.event.ActionListener.class, new String[] {"actionPerformed"}, "addActionListener", "removeActionListener" ); // NOI18N
+            eventSets[EVENT_ancestorListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "ancestorListener", javax.swing.event.AncestorListener.class, new String[] {"ancestorAdded", "ancestorRemoved", "ancestorMoved"}, "addAncestorListener", "removeAncestorListener" ); // NOI18N
+            eventSets[EVENT_caretListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "caretListener", javax.swing.event.CaretListener.class, new String[] {"caretUpdate"}, "addCaretListener", "removeCaretListener" ); // NOI18N
+            eventSets[EVENT_componentListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "componentListener", java.awt.event.ComponentListener.class, new String[] {"componentResized", "componentMoved", "componentShown", "componentHidden"}, "addComponentListener", "removeComponentListener" ); // NOI18N
+            eventSets[EVENT_containerListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "containerListener", java.awt.event.ContainerListener.class, new String[] {"componentAdded", "componentRemoved"}, "addContainerListener", "removeContainerListener" ); // NOI18N
+            eventSets[EVENT_focusListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "focusListener", java.awt.event.FocusListener.class, new String[] {"focusGained", "focusLost"}, "addFocusListener", "removeFocusListener" ); // NOI18N
+            eventSets[EVENT_hierarchyBoundsListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "hierarchyBoundsListener", java.awt.event.HierarchyBoundsListener.class, new String[] {"ancestorMoved", "ancestorResized"}, "addHierarchyBoundsListener", "removeHierarchyBoundsListener" ); // NOI18N
+            eventSets[EVENT_hierarchyListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "hierarchyListener", java.awt.event.HierarchyListener.class, new String[] {"hierarchyChanged"}, "addHierarchyListener", "removeHierarchyListener" ); // NOI18N
+            eventSets[EVENT_inputMethodListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "inputMethodListener", java.awt.event.InputMethodListener.class, new String[] {"inputMethodTextChanged", "caretPositionChanged"}, "addInputMethodListener", "removeInputMethodListener" ); // NOI18N
+            eventSets[EVENT_keyListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "keyListener", java.awt.event.KeyListener.class, new String[] {"keyTyped", "keyPressed", "keyReleased"}, "addKeyListener", "removeKeyListener" ); // NOI18N
+            eventSets[EVENT_mouseListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "mouseListener", java.awt.event.MouseListener.class, new String[] {"mouseClicked", "mousePressed", "mouseReleased", "mouseEntered", "mouseExited"}, "addMouseListener", "removeMouseListener" ); // NOI18N
+            eventSets[EVENT_mouseMotionListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "mouseMotionListener", java.awt.event.MouseMotionListener.class, new String[] {"mouseDragged", "mouseMoved"}, "addMouseMotionListener", "removeMouseMotionListener" ); // NOI18N
+            eventSets[EVENT_mouseWheelListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "mouseWheelListener", java.awt.event.MouseWheelListener.class, new String[] {"mouseWheelMoved"}, "addMouseWheelListener", "removeMouseWheelListener" ); // NOI18N
+            eventSets[EVENT_propertyChangeListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "propertyChangeListener", java.beans.PropertyChangeListener.class, new String[] {"propertyChange"}, "addPropertyChangeListener", "removePropertyChangeListener" ); // NOI18N
+            eventSets[EVENT_vetoableChangeListener] = new EventSetDescriptor ( ComponenteTextoBean.ComponenteTexto.class, "vetoableChangeListener", java.beans.VetoableChangeListener.class, new String[] {"vetoableChange"}, "addVetoableChangeListener", "removeVetoableChangeListener" ); // NOI18N
         }
         catch(IntrospectionException e) {
             e.printStackTrace();
@@ -617,7 +617,7 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
             methods[METHOD_firePropertyChange41].setDisplayName ( "" );
             methods[METHOD_firePropertyChange42] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("firePropertyChange", new Class[] {java.lang.String.class, char.class, char.class})); // NOI18N
             methods[METHOD_firePropertyChange42].setDisplayName ( "" );
-            methods[METHOD_gestionaEntrada43] = new MethodDescriptor(miComponenteTexto.ComponenteTexto.class.getMethod("gestionaEntrada", new Class[] {})); // NOI18N
+            methods[METHOD_gestionaEntrada43] = new MethodDescriptor(ComponenteTextoBean.ComponenteTexto.class.getMethod("gestionaEntrada", new Class[] {})); // NOI18N
             methods[METHOD_gestionaEntrada43].setDisplayName ( "" );
             methods[METHOD_getActionForKeyStroke44] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("getActionForKeyStroke", new Class[] {javax.swing.KeyStroke.class})); // NOI18N
             methods[METHOD_getActionForKeyStroke44].setDisplayName ( "" );
