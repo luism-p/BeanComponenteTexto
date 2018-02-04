@@ -33,20 +33,35 @@ public class ComponenteTexto extends JTextField implements Serializable {
         this.gestionaEntrada();
     }//close constructor
     
-    
+    /**
+     *
+     * @return
+     */
     public Font getFuente() {
         return fuente;
     }
 
+    /**
+     *
+     * @param fuente
+     */
     public void setFuente(Font fuente) {
         this.fuente = fuente;
         this.setFont(fuente);
     }
 
+    /**
+     *
+     * @return
+     */
     public Color getColorFuente() {
         return colorFuente;
     }
 
+    /**
+     *
+     * @param colorFuente
+     */
     public void setColorFuente(Color colorFuente) {
         this.colorFuente = colorFuente;
         this.setForeground(colorFuente);

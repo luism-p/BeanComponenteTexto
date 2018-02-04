@@ -12,6 +12,9 @@ public class tipoPropertyEditor extends PropertyEditorSupport {
     //variable del editor
     private editorTipo editor = null;
     
+    /**
+     *
+     */
     public tipoPropertyEditor() {
         //establece el valor preseleccionado en el editor.
         this.editor = new editorTipo();
