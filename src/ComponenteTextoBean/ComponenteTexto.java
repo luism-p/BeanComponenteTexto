@@ -27,11 +27,9 @@ public class ComponenteTexto extends JTextField implements Serializable {
      * Constructor sin argumentos
      */
     public ComponenteTexto() {
-        this.ancho=5;
-        this.setTipo("Texto");
-        this.setText("");
-        this.fuente=new Font("Agency FB", Font.BOLD, 14);
-        this.colorFuente=Color.BLACK;
+        this.ancho=9;
+        this.setColumns(ancho);
+        this.tipo="Texto";
         this.gestionaEntrada();
     }//close constructor
     
@@ -91,14 +89,11 @@ public class ComponenteTexto extends JTextField implements Serializable {
     public void setAncho(int ancho) {        
         //int hide = Integer.parseInt(ancho);
         //si es menor de 1 se establece en 1.
-        if(ancho <= 0){
+        if(ancho <= 0)
             ancho = 1;
-            this.ancho = ancho;
-            super.setColumns(ancho);
-        }else{
-            this.ancho = ancho;
-            super.setColumns(ancho);
-        }//close if-else.
+        
+        this.ancho = ancho;
+        super.setColumns(ancho);
     }//close set.
     
     @Override
