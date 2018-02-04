@@ -1,5 +1,8 @@
 package miComponenteTexto;
 
+import java.awt.Color;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.Serializable;
@@ -8,17 +11,19 @@ import javax.swing.JTextField;
 /**
  *
  * @author Luis
+ * @version 1.0
  */
 public class ComponenteTexto extends JTextField implements Serializable {
         
     private String tipo;
-    private String ancho;
+    private int ancho;
+    private final Color ERROR = new Color(249,206,206);
     
     /**
      * Constructor sin argumentos
      */
     public ComponenteTexto() {
-        this.setAncho("5");
+        this.setAncho(5);
         this.setTipo("Texto");
         this.setText("");
         this.gestionaEntrada();
@@ -49,7 +54,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
      *
      * @return the value of ancho
      */
-    public String getAncho() {
+    public int getAncho() {
         return ancho;
     }
 
@@ -58,85 +63,90 @@ public class ComponenteTexto extends JTextField implements Serializable {
      *
      * @param ancho new value of ancho
      */
-    public void setAncho(String ancho) {        
-        int hide = Integer.parseInt(ancho);
+    public void setAncho(int ancho) {        
+        //int hide = Integer.parseInt(ancho);
         //si es menor de 1 se establece en 1.
-        if(hide <= 0){
-            ancho = "1";
+        if(ancho <= 0){
+            ancho = 1;
             this.ancho = ancho;
-            super.setColumns(Integer.parseInt(ancho));
+            super.setColumns(ancho);
         }else{
             this.ancho = ancho;
-            super.setColumns(Integer.parseInt(ancho));
+            super.setColumns(ancho);
         }//close if-else.
     }//close set.
     
     @Override
     public void setText(String text){
-        switch (tipo) {
-            case "Entero":
-                try{
-                    Integer.parseInt(text);
-                    super.setText(text);
-                }catch (NumberFormatException e){
-                    super.setText("valor no válido");
-                }
-                break;
-            case "Real":
-                try{
-                    Double.parseDouble(text);
-                    super.setText(text);
-                }catch (NumberFormatException e){
-                    super.setText("valor no válido");
-                }
-                break;
-            case "SN":
-                try{
-                    if(text.equalsIgnoreCase("S"))
-                        super.setText(text);
-                    else if (text.equalsIgnoreCase("N"))
-                        super.setText(text);
-                }catch (Exception e){
-                    super.setText("valor no válido");
-                }
-                break;
-            default:
-                super.setText(text);
-                break;
-        }//close switch.      
+        super.setText(text);  
     }//close set.
     
     /**
      * gestiona la entrada por teclado para el componente.
      */
     public final void gestionaEntrada() {
-        this.addKeyListener(new KeyAdapter() {
-            
+        this.addKeyListener(new KeyAdapter() {   
             @Override
-            public void keyTyped(KeyEvent e) {
-                char caracter = e.getKeyChar();       
+            public void keyTyped(KeyEvent evt) {
+                char caracter = evt.getKeyChar();
+                
                 switch (tipo) {
                     case "Entero":
-                        if (!Character.isDigit(caracter))
-                            e.consume();
-                        if (getText().length()>=Integer.parseInt(ancho))
-                            e.consume();
+                        if (!Character.isDigit(caracter) && !(caracter == KeyEvent.VK_BACK_SPACE)) {
+                            evt.consume();
+                            setBackground(ERROR);
+                        }else
+                            setBackground(Color.WHITE);
+                        
+                        if (getText().length()>=ancho)
+                            evt.consume();
                         break;
                     case "Real":
-                        if (!Character.isDigit(caracter) && (caracter != KeyEvent.VK_PERIOD))
-                            e.consume();
-                        if (getText().length()>=Integer.parseInt(ancho)+1)
-                            e.consume();
+                        if ((!Character.isDigit(caracter)) && 
+                            ((caracter < '.') || (caracter > '.')) && 
+                            (caracter != KeyEvent.VK_BACK_SPACE)) {
+                            evt.consume();
+                            setBackground(ERROR);
+                        }else if (getText().contains(".")){
+                                if ((!Character.isDigit(caracter))&& (caracter != KeyEvent.VK_BACK_SPACE)){
+                                    evt.consume();  // ignorar el evento de teclado
+                                    setBackground(ERROR);
+                                }
+                        }else
+                            setBackground(Color.WHITE);
+                        if (getText().length()>=ancho)
+                            evt.consume();
                         break;
                     case "SN":
                         if(Character.toUpperCase(caracter) != KeyEvent.VK_S && Character.toUpperCase(caracter) != KeyEvent.VK_N)
-                            e.consume();
-                        if (getText().length()>=Integer.parseInt(ancho))
-                            e.consume();
+                            evt.consume();
+                        if (getText().length()>=ancho)
+                            evt.consume();
+                    case "Alfanumérico":
+                        if(!getText().isEmpty())
+                            setBackground(Color.WHITE);
+                        break;
+                    case "Texto":
+                        if (!Character.isLetter(caracter) && !(caracter == KeyEvent.VK_SPACE) 
+                        && !(caracter == KeyEvent.VK_BACK_SPACE)) {
+                            evt.consume();
+                            setBackground(ERROR);
+                        }else
+                            setBackground(Color.WHITE);
+                        break;
                     default:
-                        if (getText().length()>=Integer.parseInt(ancho))
-                            e.consume();
+                        if (getText().length()>=ancho)
+                            evt.consume();
                 }//close switch.
+            }
+        });
+        
+        this.addFocusListener(new FocusAdapter(){
+        
+            @Override
+            public void focusLost(FocusEvent e){
+                if(getText().isEmpty())
+                    setBackground(ERROR);   
             }
         });
     }//close función.
@@ -146,4 +156,4 @@ public class ComponenteTexto extends JTextField implements Serializable {
         return getTipo()+" -- "+ getAncho();
     }
 
-}
+}//close class.

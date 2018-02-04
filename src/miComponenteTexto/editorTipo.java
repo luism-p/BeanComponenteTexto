@@ -35,7 +35,7 @@ public class editorTipo extends javax.swing.JPanel implements java.beans.Customi
         jcbTipo = new javax.swing.JComboBox<>();
         jLtipo = new javax.swing.JLabel();
 
-        jcbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Entero", "Real", "Texto", "SN" }));
+        jcbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Entero", "Real", "Texto", "SN", "Alfanumérico" }));
 
         jLtipo.setText("tipo de dato:");
 
@@ -64,6 +64,6 @@ public class editorTipo extends javax.swing.JPanel implements java.beans.Customi
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLtipo;
-    public javax.swing.JComboBox<String> jcbTipo;
+    protected javax.swing.JComboBox<String> jcbTipo;
     // End of variables declaration//GEN-END:variables
 }

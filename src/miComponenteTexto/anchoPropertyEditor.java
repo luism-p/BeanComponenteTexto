@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package miComponenteTexto;
 
 import java.awt.Component;
@@ -31,14 +26,19 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
                 ,"12", "13", "14","15"};
         return tags;
     }
-    
+    /*
+    obtiene el valor del editor de propiedades para establecer 
+    el valor del componente en línea de código 
+    (Código generado por java en el diseño de la interfaz). 
+    El valor lo establece setValue()
+    */
     @Override
         public Object getValue() {
             if(super.getValue()==null){
                 setValue(null);
             }
-            String ret = (String)super.getValue().toString();
-            ret = editor.jsAncho.getValue().toString();
+            int ret;
+            ret = (int) editor.jsAncho.getValue();
         return ret;
     }
 
@@ -48,9 +48,10 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
     @Override
     public void setValue(Object ancho) {
         if(ancho==null){
-            ancho = new String();
+            ancho = 1;
         }
-        super.setValue((String)ancho);
+        
+        super.setValue((int) ancho);
 
     }
     
@@ -58,20 +59,25 @@ public class anchoPropertyEditor extends PropertyEditorSupport {
     public boolean supportsCustomEditor() {
         return true;
     }
-    
+    //devuelve en la hoja de propiedades el valor establecido en el editor
     @Override
     public String getAsText(){
-        return super.getAsText();
+        return editor.jsAncho.getValue().toString();
     }
-    
+    //establece el valor seleccionado en el editor de propiedades
     @Override
     public void setAsText(String text){
         editor.jsAncho.setValue(Integer.parseInt(text));
-        super.setAsText(text);
     }
-    
+    /*
+    devuelve una cadena que será el valor 
+    configurado en el componente personalizado. Este valor es el que obtenido desde getValue 
+    se formatea para que se coloque en el código java. Si se quiere representar un número, 
+    como es este caso, debe devolverse una cadena simple, sin agregar las comillas dobles. 
+    Ver el ejemplo de tipo para notar la diferencia.
+    */
     @Override
     public String getJavaInitializationString() {
-        return "\"" + editor.jsAncho.getValue().toString() + "\"" ;
+        return editor.jsAncho.getValue().toString();
     }
 }

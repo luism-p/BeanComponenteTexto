@@ -42,17 +42,18 @@
     <Component class="javax.swing.JComboBox" name="jcbTipo">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
+          <StringArray count="5">
             <StringItem index="0" value="Entero"/>
             <StringItem index="1" value="Real"/>
             <StringItem index="2" value="Texto"/>
             <StringItem index="3" value="SN"/>
+            <StringItem index="4" value="Alfanum&#xe9;rico"/>
           </StringArray>
         </Property>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLtipo">
