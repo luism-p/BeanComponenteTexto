@@ -21,7 +21,10 @@ public class ComponenteTexto extends JTextField implements Serializable {
     private Font fuente;
     private Color colorFuente;
 
-    private final Color ERROR = new Color(249,206,206);
+    /**
+     *
+     */
+    public static final Color ERROR = new Color(249,206,206);
     
     /**
      * Constructor sin argumentos
