@@ -21,9 +21,6 @@ public class ComponenteTexto extends JTextField implements Serializable {
     private Font fuente;
     private Color colorFuente;
 
-    /**
-     *
-     */
     public static final Color ERROR = new Color(249,206,206);
     
     /**
@@ -125,7 +122,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
     public final void gestionaEntrada() {
         this.addKeyListener(new KeyAdapter() {   
             @Override
-            public void keyTyped(KeyEvent evt) {
+            public void keyReleased(KeyEvent evt) {
                 char caracter = evt.getKeyChar();
                 
                 switch (tipo) {
