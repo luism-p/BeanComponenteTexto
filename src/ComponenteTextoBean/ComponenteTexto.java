@@ -20,7 +20,6 @@ public class ComponenteTexto extends JTextField implements Serializable {
     private int ancho;
     private Font fuente;
     private Color colorFuente;
-    private Color colorFondo;
 
     private final Color ERROR = new Color(249,206,206);
     
@@ -96,27 +95,6 @@ public class ComponenteTexto extends JTextField implements Serializable {
     public int getAncho() {
         return ancho;
     }
-    
-
-    /**
-     * Get the value of colorFondo
-     *
-     * @return the value of colorFondo
-     */
-    public Color getColorFondo() {
-        return colorFondo;
-    }
-
-    /**
-     * Set the value of colorFondo
-     *
-     * @param colorFondo new value of colorFondo
-     */
-    public void setColorFondo(Color colorFondo) {
-        this.colorFondo = colorFondo;
-        this.setBackground(colorFondo);
-    }
-
 
     /**
      * Set the value of ancho
