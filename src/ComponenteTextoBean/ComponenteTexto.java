@@ -122,7 +122,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
     public final void gestionaEntrada() {
         this.addKeyListener(new KeyAdapter() {   
             @Override
-            public void keyReleased(KeyEvent evt) {
+            public void keyTyped(KeyEvent evt) {
                 char caracter = evt.getKeyChar();
                 
                 switch (tipo) {

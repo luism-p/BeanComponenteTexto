@@ -16,6 +16,7 @@ public class editorAncho extends javax.swing.JPanel implements java.beans.Custom
         initComponents();
     }
     
+    @Override
     public void setObject(Object bean) {
         this.bean = bean;
     }
