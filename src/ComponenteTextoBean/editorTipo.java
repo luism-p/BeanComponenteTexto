@@ -35,7 +35,12 @@ public class editorTipo extends javax.swing.JPanel implements java.beans.Customi
         jcbTipo = new javax.swing.JComboBox<>();
         jLtipo = new javax.swing.JLabel();
 
-        jcbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Entero", "Real", "Texto", "SN", "Alfanumérico" }));
+        jcbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Numeros", "Real", "Texto", "SN", "Alfanumérico" }));
+        jcbTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcbTipoActionPerformed(evt);
+            }
+        });
 
         jLtipo.setText("tipo de dato:");
 
@@ -60,6 +65,10 @@ public class editorTipo extends javax.swing.JPanel implements java.beans.Customi
                 .addContainerGap(14, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jcbTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbTipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcbTipoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

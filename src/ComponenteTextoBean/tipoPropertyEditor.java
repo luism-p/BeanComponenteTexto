@@ -27,7 +27,7 @@ public class tipoPropertyEditor extends PropertyEditorSupport {
     
         @Override
     public String[] getTags() {
-        String[] tags = {"Entero", "Real", "Texto", "SN", "Alfanumérico"};
+        String[] tags = {"Numeros", "Real", "Texto", "SN", "Alfanumérico"};
         return tags;
     }
     /*

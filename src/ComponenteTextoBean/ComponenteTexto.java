@@ -1,18 +1,14 @@
 package ComponenteTextoBean;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.Serializable;
 import javax.swing.JTextField;
 
 /**
  *
  * @author Luis
- * @version 1.0
+ * @version 1.3
  */
 public class ComponenteTexto extends JTextField implements Serializable {
         
@@ -82,7 +78,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
      * @param tipo new value of tipo
      */
     public void setTipo(String tipo) {
-        if (tipo.equals("Entero") || tipo.equals("Real") || tipo.equals("Texto")
+        if (tipo.equals("Numeros") || tipo.equals("Real") || tipo.equals("Texto")
                 || tipo.equals("SN") || tipo.equals("Alfanumérico")) 
             this.tipo = tipo;
     }//close set.
@@ -126,7 +122,7 @@ public class ComponenteTexto extends JTextField implements Serializable {
                 char caracter = evt.getKeyChar();
                 
                 switch (tipo) {
-                    case "Entero":
+                    case "Numeros":
                         if (!Character.isDigit(caracter) && !(caracter == KeyEvent.VK_BACK_SPACE)) {
                             evt.consume();
                             setBackground(ERROR);

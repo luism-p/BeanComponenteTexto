@@ -32,6 +32,8 @@ public class editorAncho extends javax.swing.JPanel implements java.beans.Custom
         jsAncho = new javax.swing.JSpinner();
         jlAncho = new javax.swing.JLabel();
 
+        jsAncho.setModel(new javax.swing.SpinnerNumberModel(9, 1, 20, 1));
+
         jlAncho.setText("Asigne un ancho:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
