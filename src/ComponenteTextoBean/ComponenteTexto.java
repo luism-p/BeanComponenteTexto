@@ -1,7 +1,10 @@
 package ComponenteTextoBean;
 
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.Serializable;
 import javax.swing.JTextField;
 

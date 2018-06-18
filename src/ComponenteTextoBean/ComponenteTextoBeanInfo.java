@@ -43,129 +43,128 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
     private static final int PROPERTY_caretColor = 17;
     private static final int PROPERTY_caretListeners = 18;
     private static final int PROPERTY_caretPosition = 19;
-    private static final int PROPERTY_colorFondo = 20;
-    private static final int PROPERTY_colorFuente = 21;
-    private static final int PROPERTY_colorModel = 22;
-    private static final int PROPERTY_columns = 23;
-    private static final int PROPERTY_component = 24;
-    private static final int PROPERTY_componentCount = 25;
-    private static final int PROPERTY_componentListeners = 26;
-    private static final int PROPERTY_componentOrientation = 27;
-    private static final int PROPERTY_componentPopupMenu = 28;
-    private static final int PROPERTY_components = 29;
-    private static final int PROPERTY_containerListeners = 30;
-    private static final int PROPERTY_cursor = 31;
-    private static final int PROPERTY_cursorSet = 32;
-    private static final int PROPERTY_debugGraphicsOptions = 33;
-    private static final int PROPERTY_disabledTextColor = 34;
-    private static final int PROPERTY_displayable = 35;
-    private static final int PROPERTY_document = 36;
-    private static final int PROPERTY_doubleBuffered = 37;
-    private static final int PROPERTY_dragEnabled = 38;
-    private static final int PROPERTY_dropLocation = 39;
-    private static final int PROPERTY_dropMode = 40;
-    private static final int PROPERTY_dropTarget = 41;
-    private static final int PROPERTY_editable = 42;
-    private static final int PROPERTY_enabled = 43;
-    private static final int PROPERTY_focusable = 44;
-    private static final int PROPERTY_focusAccelerator = 45;
-    private static final int PROPERTY_focusCycleRoot = 46;
-    private static final int PROPERTY_focusCycleRootAncestor = 47;
-    private static final int PROPERTY_focusListeners = 48;
-    private static final int PROPERTY_focusOwner = 49;
-    private static final int PROPERTY_focusTraversable = 50;
-    private static final int PROPERTY_focusTraversalKeys = 51;
-    private static final int PROPERTY_focusTraversalKeysEnabled = 52;
-    private static final int PROPERTY_focusTraversalPolicy = 53;
-    private static final int PROPERTY_focusTraversalPolicyProvider = 54;
-    private static final int PROPERTY_focusTraversalPolicySet = 55;
-    private static final int PROPERTY_font = 56;
-    private static final int PROPERTY_fontSet = 57;
-    private static final int PROPERTY_foreground = 58;
-    private static final int PROPERTY_foregroundSet = 59;
-    private static final int PROPERTY_fuente = 60;
-    private static final int PROPERTY_graphics = 61;
-    private static final int PROPERTY_graphicsConfiguration = 62;
-    private static final int PROPERTY_height = 63;
-    private static final int PROPERTY_hierarchyBoundsListeners = 64;
-    private static final int PROPERTY_hierarchyListeners = 65;
-    private static final int PROPERTY_highlighter = 66;
-    private static final int PROPERTY_horizontalAlignment = 67;
-    private static final int PROPERTY_horizontalVisibility = 68;
-    private static final int PROPERTY_ignoreRepaint = 69;
-    private static final int PROPERTY_inheritsPopupMenu = 70;
-    private static final int PROPERTY_inputContext = 71;
-    private static final int PROPERTY_inputMap = 72;
-    private static final int PROPERTY_inputMethodListeners = 73;
-    private static final int PROPERTY_inputMethodRequests = 74;
-    private static final int PROPERTY_inputVerifier = 75;
-    private static final int PROPERTY_insets = 76;
-    private static final int PROPERTY_keyListeners = 77;
-    private static final int PROPERTY_keymap = 78;
-    private static final int PROPERTY_layout = 79;
-    private static final int PROPERTY_lightweight = 80;
-    private static final int PROPERTY_locale = 81;
-    private static final int PROPERTY_location = 82;
-    private static final int PROPERTY_locationOnScreen = 83;
-    private static final int PROPERTY_managingFocus = 84;
-    private static final int PROPERTY_margin = 85;
-    private static final int PROPERTY_maximumSize = 86;
-    private static final int PROPERTY_maximumSizeSet = 87;
-    private static final int PROPERTY_minimumSize = 88;
-    private static final int PROPERTY_minimumSizeSet = 89;
-    private static final int PROPERTY_mouseListeners = 90;
-    private static final int PROPERTY_mouseMotionListeners = 91;
-    private static final int PROPERTY_mousePosition = 92;
-    private static final int PROPERTY_mouseWheelListeners = 93;
-    private static final int PROPERTY_name = 94;
-    private static final int PROPERTY_navigationFilter = 95;
-    private static final int PROPERTY_nextFocusableComponent = 96;
-    private static final int PROPERTY_opaque = 97;
-    private static final int PROPERTY_optimizedDrawingEnabled = 98;
-    private static final int PROPERTY_paintingForPrint = 99;
-    private static final int PROPERTY_paintingTile = 100;
-    private static final int PROPERTY_parent = 101;
-    private static final int PROPERTY_peer = 102;
-    private static final int PROPERTY_preferredScrollableViewportSize = 103;
-    private static final int PROPERTY_preferredSize = 104;
-    private static final int PROPERTY_preferredSizeSet = 105;
-    private static final int PROPERTY_propertyChangeListeners = 106;
-    private static final int PROPERTY_registeredKeyStrokes = 107;
-    private static final int PROPERTY_requestFocusEnabled = 108;
-    private static final int PROPERTY_rootPane = 109;
-    private static final int PROPERTY_scrollableTracksViewportHeight = 110;
-    private static final int PROPERTY_scrollableTracksViewportWidth = 111;
-    private static final int PROPERTY_scrollOffset = 112;
-    private static final int PROPERTY_selectedText = 113;
-    private static final int PROPERTY_selectedTextColor = 114;
-    private static final int PROPERTY_selectionColor = 115;
-    private static final int PROPERTY_selectionEnd = 116;
-    private static final int PROPERTY_selectionStart = 117;
-    private static final int PROPERTY_showing = 118;
-    private static final int PROPERTY_size = 119;
-    private static final int PROPERTY_text = 120;
-    private static final int PROPERTY_tipo = 121;
-    private static final int PROPERTY_toolkit = 122;
-    private static final int PROPERTY_toolTipText = 123;
-    private static final int PROPERTY_topLevelAncestor = 124;
-    private static final int PROPERTY_transferHandler = 125;
-    private static final int PROPERTY_treeLock = 126;
-    private static final int PROPERTY_UI = 127;
-    private static final int PROPERTY_UIClassID = 128;
-    private static final int PROPERTY_valid = 129;
-    private static final int PROPERTY_validateRoot = 130;
-    private static final int PROPERTY_verifyInputWhenFocusTarget = 131;
-    private static final int PROPERTY_vetoableChangeListeners = 132;
-    private static final int PROPERTY_visible = 133;
-    private static final int PROPERTY_visibleRect = 134;
-    private static final int PROPERTY_width = 135;
-    private static final int PROPERTY_x = 136;
-    private static final int PROPERTY_y = 137;
+    private static final int PROPERTY_colorFuente = 20;
+    private static final int PROPERTY_colorModel = 21;
+    private static final int PROPERTY_columns = 22;
+    private static final int PROPERTY_component = 23;
+    private static final int PROPERTY_componentCount = 24;
+    private static final int PROPERTY_componentListeners = 25;
+    private static final int PROPERTY_componentOrientation = 26;
+    private static final int PROPERTY_componentPopupMenu = 27;
+    private static final int PROPERTY_components = 28;
+    private static final int PROPERTY_containerListeners = 29;
+    private static final int PROPERTY_cursor = 30;
+    private static final int PROPERTY_cursorSet = 31;
+    private static final int PROPERTY_debugGraphicsOptions = 32;
+    private static final int PROPERTY_disabledTextColor = 33;
+    private static final int PROPERTY_displayable = 34;
+    private static final int PROPERTY_document = 35;
+    private static final int PROPERTY_doubleBuffered = 36;
+    private static final int PROPERTY_dragEnabled = 37;
+    private static final int PROPERTY_dropLocation = 38;
+    private static final int PROPERTY_dropMode = 39;
+    private static final int PROPERTY_dropTarget = 40;
+    private static final int PROPERTY_editable = 41;
+    private static final int PROPERTY_enabled = 42;
+    private static final int PROPERTY_focusable = 43;
+    private static final int PROPERTY_focusAccelerator = 44;
+    private static final int PROPERTY_focusCycleRoot = 45;
+    private static final int PROPERTY_focusCycleRootAncestor = 46;
+    private static final int PROPERTY_focusListeners = 47;
+    private static final int PROPERTY_focusOwner = 48;
+    private static final int PROPERTY_focusTraversable = 49;
+    private static final int PROPERTY_focusTraversalKeys = 50;
+    private static final int PROPERTY_focusTraversalKeysEnabled = 51;
+    private static final int PROPERTY_focusTraversalPolicy = 52;
+    private static final int PROPERTY_focusTraversalPolicyProvider = 53;
+    private static final int PROPERTY_focusTraversalPolicySet = 54;
+    private static final int PROPERTY_font = 55;
+    private static final int PROPERTY_fontSet = 56;
+    private static final int PROPERTY_foreground = 57;
+    private static final int PROPERTY_foregroundSet = 58;
+    private static final int PROPERTY_fuente = 59;
+    private static final int PROPERTY_graphics = 60;
+    private static final int PROPERTY_graphicsConfiguration = 61;
+    private static final int PROPERTY_height = 62;
+    private static final int PROPERTY_hierarchyBoundsListeners = 63;
+    private static final int PROPERTY_hierarchyListeners = 64;
+    private static final int PROPERTY_highlighter = 65;
+    private static final int PROPERTY_horizontalAlignment = 66;
+    private static final int PROPERTY_horizontalVisibility = 67;
+    private static final int PROPERTY_ignoreRepaint = 68;
+    private static final int PROPERTY_inheritsPopupMenu = 69;
+    private static final int PROPERTY_inputContext = 70;
+    private static final int PROPERTY_inputMap = 71;
+    private static final int PROPERTY_inputMethodListeners = 72;
+    private static final int PROPERTY_inputMethodRequests = 73;
+    private static final int PROPERTY_inputVerifier = 74;
+    private static final int PROPERTY_insets = 75;
+    private static final int PROPERTY_keyListeners = 76;
+    private static final int PROPERTY_keymap = 77;
+    private static final int PROPERTY_layout = 78;
+    private static final int PROPERTY_lightweight = 79;
+    private static final int PROPERTY_locale = 80;
+    private static final int PROPERTY_location = 81;
+    private static final int PROPERTY_locationOnScreen = 82;
+    private static final int PROPERTY_managingFocus = 83;
+    private static final int PROPERTY_margin = 84;
+    private static final int PROPERTY_maximumSize = 85;
+    private static final int PROPERTY_maximumSizeSet = 86;
+    private static final int PROPERTY_minimumSize = 87;
+    private static final int PROPERTY_minimumSizeSet = 88;
+    private static final int PROPERTY_mouseListeners = 89;
+    private static final int PROPERTY_mouseMotionListeners = 90;
+    private static final int PROPERTY_mousePosition = 91;
+    private static final int PROPERTY_mouseWheelListeners = 92;
+    private static final int PROPERTY_name = 93;
+    private static final int PROPERTY_navigationFilter = 94;
+    private static final int PROPERTY_nextFocusableComponent = 95;
+    private static final int PROPERTY_opaque = 96;
+    private static final int PROPERTY_optimizedDrawingEnabled = 97;
+    private static final int PROPERTY_paintingForPrint = 98;
+    private static final int PROPERTY_paintingTile = 99;
+    private static final int PROPERTY_parent = 100;
+    private static final int PROPERTY_peer = 101;
+    private static final int PROPERTY_preferredScrollableViewportSize = 102;
+    private static final int PROPERTY_preferredSize = 103;
+    private static final int PROPERTY_preferredSizeSet = 104;
+    private static final int PROPERTY_propertyChangeListeners = 105;
+    private static final int PROPERTY_registeredKeyStrokes = 106;
+    private static final int PROPERTY_requestFocusEnabled = 107;
+    private static final int PROPERTY_rootPane = 108;
+    private static final int PROPERTY_scrollableTracksViewportHeight = 109;
+    private static final int PROPERTY_scrollableTracksViewportWidth = 110;
+    private static final int PROPERTY_scrollOffset = 111;
+    private static final int PROPERTY_selectedText = 112;
+    private static final int PROPERTY_selectedTextColor = 113;
+    private static final int PROPERTY_selectionColor = 114;
+    private static final int PROPERTY_selectionEnd = 115;
+    private static final int PROPERTY_selectionStart = 116;
+    private static final int PROPERTY_showing = 117;
+    private static final int PROPERTY_size = 118;
+    private static final int PROPERTY_text = 119;
+    private static final int PROPERTY_tipo = 120;
+    private static final int PROPERTY_toolkit = 121;
+    private static final int PROPERTY_toolTipText = 122;
+    private static final int PROPERTY_topLevelAncestor = 123;
+    private static final int PROPERTY_transferHandler = 124;
+    private static final int PROPERTY_treeLock = 125;
+    private static final int PROPERTY_UI = 126;
+    private static final int PROPERTY_UIClassID = 127;
+    private static final int PROPERTY_valid = 128;
+    private static final int PROPERTY_validateRoot = 129;
+    private static final int PROPERTY_verifyInputWhenFocusTarget = 130;
+    private static final int PROPERTY_vetoableChangeListeners = 131;
+    private static final int PROPERTY_visible = 132;
+    private static final int PROPERTY_visibleRect = 133;
+    private static final int PROPERTY_width = 134;
+    private static final int PROPERTY_x = 135;
+    private static final int PROPERTY_y = 136;
 
     // Property array 
     /*lazy PropertyDescriptor*/
     private static PropertyDescriptor[] getPdescriptor(){
-        PropertyDescriptor[] properties = new PropertyDescriptor[138];
+        PropertyDescriptor[] properties = new PropertyDescriptor[137];
     
         try {
             properties[PROPERTY_accessibleContext] = new PropertyDescriptor ( "accessibleContext", ComponenteTextoBean.ComponenteTexto.class, "getAccessibleContext", null ); // NOI18N
@@ -189,7 +188,6 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
             properties[PROPERTY_caretColor] = new PropertyDescriptor ( "caretColor", ComponenteTextoBean.ComponenteTexto.class, "getCaretColor", "setCaretColor" ); // NOI18N
             properties[PROPERTY_caretListeners] = new PropertyDescriptor ( "caretListeners", ComponenteTextoBean.ComponenteTexto.class, "getCaretListeners", null ); // NOI18N
             properties[PROPERTY_caretPosition] = new PropertyDescriptor ( "caretPosition", ComponenteTextoBean.ComponenteTexto.class, "getCaretPosition", "setCaretPosition" ); // NOI18N
-            properties[PROPERTY_colorFondo] = new PropertyDescriptor ( "colorFondo", ComponenteTextoBean.ComponenteTexto.class, "getColorFondo", "setColorFondo" ); // NOI18N
             properties[PROPERTY_colorFuente] = new PropertyDescriptor ( "colorFuente", ComponenteTextoBean.ComponenteTexto.class, "getColorFuente", "setColorFuente" ); // NOI18N
             properties[PROPERTY_colorModel] = new PropertyDescriptor ( "colorModel", ComponenteTextoBean.ComponenteTexto.class, "getColorModel", null ); // NOI18N
             properties[PROPERTY_columns] = new PropertyDescriptor ( "columns", ComponenteTextoBean.ComponenteTexto.class, "getColumns", "setColumns" ); // NOI18N
@@ -519,21 +517,22 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
     private static final int METHOD_show153 = 153;
     private static final int METHOD_show154 = 154;
     private static final int METHOD_size155 = 155;
-    private static final int METHOD_transferFocus156 = 156;
-    private static final int METHOD_transferFocusBackward157 = 157;
-    private static final int METHOD_transferFocusDownCycle158 = 158;
-    private static final int METHOD_transferFocusUpCycle159 = 159;
-    private static final int METHOD_unregisterKeyboardAction160 = 160;
-    private static final int METHOD_update161 = 161;
-    private static final int METHOD_updateUI162 = 162;
-    private static final int METHOD_validate163 = 163;
-    private static final int METHOD_viewToModel164 = 164;
-    private static final int METHOD_write165 = 165;
+    private static final int METHOD_toString156 = 156;
+    private static final int METHOD_transferFocus157 = 157;
+    private static final int METHOD_transferFocusBackward158 = 158;
+    private static final int METHOD_transferFocusDownCycle159 = 159;
+    private static final int METHOD_transferFocusUpCycle160 = 160;
+    private static final int METHOD_unregisterKeyboardAction161 = 161;
+    private static final int METHOD_update162 = 162;
+    private static final int METHOD_updateUI163 = 163;
+    private static final int METHOD_validate164 = 164;
+    private static final int METHOD_viewToModel165 = 165;
+    private static final int METHOD_write166 = 166;
 
     // Method array 
     /*lazy MethodDescriptor*/
     private static MethodDescriptor[] getMdescriptor(){
-        MethodDescriptor[] methods = new MethodDescriptor[166];
+        MethodDescriptor[] methods = new MethodDescriptor[167];
     
         try {
             methods[METHOD_action0] = new MethodDescriptor(java.awt.Component.class.getMethod("action", new Class[] {java.awt.Event.class, java.lang.Object.class})); // NOI18N
@@ -848,26 +847,28 @@ public class ComponenteTextoBeanInfo extends SimpleBeanInfo {
             methods[METHOD_show154].setDisplayName ( "" );
             methods[METHOD_size155] = new MethodDescriptor(java.awt.Component.class.getMethod("size", new Class[] {})); // NOI18N
             methods[METHOD_size155].setDisplayName ( "" );
-            methods[METHOD_transferFocus156] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocus", new Class[] {})); // NOI18N
-            methods[METHOD_transferFocus156].setDisplayName ( "" );
-            methods[METHOD_transferFocusBackward157] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocusBackward", new Class[] {})); // NOI18N
-            methods[METHOD_transferFocusBackward157].setDisplayName ( "" );
-            methods[METHOD_transferFocusDownCycle158] = new MethodDescriptor(java.awt.Container.class.getMethod("transferFocusDownCycle", new Class[] {})); // NOI18N
-            methods[METHOD_transferFocusDownCycle158].setDisplayName ( "" );
-            methods[METHOD_transferFocusUpCycle159] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocusUpCycle", new Class[] {})); // NOI18N
-            methods[METHOD_transferFocusUpCycle159].setDisplayName ( "" );
-            methods[METHOD_unregisterKeyboardAction160] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("unregisterKeyboardAction", new Class[] {javax.swing.KeyStroke.class})); // NOI18N
-            methods[METHOD_unregisterKeyboardAction160].setDisplayName ( "" );
-            methods[METHOD_update161] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("update", new Class[] {java.awt.Graphics.class})); // NOI18N
-            methods[METHOD_update161].setDisplayName ( "" );
-            methods[METHOD_updateUI162] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("updateUI", new Class[] {})); // NOI18N
-            methods[METHOD_updateUI162].setDisplayName ( "" );
-            methods[METHOD_validate163] = new MethodDescriptor(java.awt.Container.class.getMethod("validate", new Class[] {})); // NOI18N
-            methods[METHOD_validate163].setDisplayName ( "" );
-            methods[METHOD_viewToModel164] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("viewToModel", new Class[] {java.awt.Point.class})); // NOI18N
-            methods[METHOD_viewToModel164].setDisplayName ( "" );
-            methods[METHOD_write165] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("write", new Class[] {java.io.Writer.class})); // NOI18N
-            methods[METHOD_write165].setDisplayName ( "" );
+            methods[METHOD_toString156] = new MethodDescriptor(ComponenteTextoBean.ComponenteTexto.class.getMethod("toString", new Class[] {})); // NOI18N
+            methods[METHOD_toString156].setDisplayName ( "" );
+            methods[METHOD_transferFocus157] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocus", new Class[] {})); // NOI18N
+            methods[METHOD_transferFocus157].setDisplayName ( "" );
+            methods[METHOD_transferFocusBackward158] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocusBackward", new Class[] {})); // NOI18N
+            methods[METHOD_transferFocusBackward158].setDisplayName ( "" );
+            methods[METHOD_transferFocusDownCycle159] = new MethodDescriptor(java.awt.Container.class.getMethod("transferFocusDownCycle", new Class[] {})); // NOI18N
+            methods[METHOD_transferFocusDownCycle159].setDisplayName ( "" );
+            methods[METHOD_transferFocusUpCycle160] = new MethodDescriptor(java.awt.Component.class.getMethod("transferFocusUpCycle", new Class[] {})); // NOI18N
+            methods[METHOD_transferFocusUpCycle160].setDisplayName ( "" );
+            methods[METHOD_unregisterKeyboardAction161] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("unregisterKeyboardAction", new Class[] {javax.swing.KeyStroke.class})); // NOI18N
+            methods[METHOD_unregisterKeyboardAction161].setDisplayName ( "" );
+            methods[METHOD_update162] = new MethodDescriptor(javax.swing.JComponent.class.getMethod("update", new Class[] {java.awt.Graphics.class})); // NOI18N
+            methods[METHOD_update162].setDisplayName ( "" );
+            methods[METHOD_updateUI163] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("updateUI", new Class[] {})); // NOI18N
+            methods[METHOD_updateUI163].setDisplayName ( "" );
+            methods[METHOD_validate164] = new MethodDescriptor(java.awt.Container.class.getMethod("validate", new Class[] {})); // NOI18N
+            methods[METHOD_validate164].setDisplayName ( "" );
+            methods[METHOD_viewToModel165] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("viewToModel", new Class[] {java.awt.Point.class})); // NOI18N
+            methods[METHOD_viewToModel165].setDisplayName ( "" );
+            methods[METHOD_write166] = new MethodDescriptor(javax.swing.text.JTextComponent.class.getMethod("write", new Class[] {java.io.Writer.class})); // NOI18N
+            methods[METHOD_write166].setDisplayName ( "" );
         }
         catch( Exception e) {}//GEN-HEADEREND:Methods
         // Here you can add code for customizing the methods array.
